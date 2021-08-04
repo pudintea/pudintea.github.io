@@ -1,0 +1,28 @@
+# Pudin Saepudin Ilham
+# Version: 1.0
+# Last Update: 2021-08-04
+# Homepage: https://www.pdn.my.id
+# Canonical URL for this file: https://www.pdn.my.id
+# License: GPLv3
+# Contact: pudin [at] qmail.id
+
+google.com
+mail.google.com
+ads.google.com
+analytics.google.com
+appcbt.smaia1.local
+appsoal.smaia1.local
+cbt.smaia1.local
+cp.uswah.id
+fliphtml5.com
+mikrotik.co.id
+web.telegram.org
+web.whatsapp.com
+www.appcbt.smaia1.local
+www.appsoal.smaia1.local
+www.cbt.smaia1.local
+www.mikrotik.co.id
+zfrmz.com
+zoho.com
+zohopublic.com
+zoom.us
