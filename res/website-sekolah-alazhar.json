@@ -1,0 +1,233 @@
+{
+    "bannerimage": "https://al-azhar.sch.id/wordpress.png",
+    "urlbannerimage": "https://al-azhar.sch.id",
+	"tk": [
+		{
+			"title": "TK Islam Al Azhar 1 Kebayoran Baru",
+			"url": "https://tkia1.al-azhar.sch.id"
+		},
+		{
+			"title": "TK Islam Al Azhar 12",
+			"url": "https://tkia12.al-azhar.sch.id"
+		},
+		{
+			"title": "TK Islam Al Azhar 15",
+			"url": "https://tkia15.al-azhar.sch.id"
+		},
+		{
+			"title": "TK Islam Al Azhar 17",
+			"url": "https://tkia17.al-azhar.sch.id"
+		},
+		{
+			"title": "TK Islam Al Azhar 18",
+			"url": "https://tkia18.al-azhar.sch.id"
+		},
+		{
+			"title": "TK Islam Al Azhar 2",
+			"url": "https://tkia2.al-azhar.sch.id"
+		},
+		{
+			"title": "TK Islam Al Azhar 26",
+			"url": "https://tkia26.al-azhar.sch.id"
+		},
+		{
+			"title": "TK Islam Al Azhar 27",
+			"url": "https://tkia27.al-azhar.sch.id"
+		},
+		{
+			"title": "TK Islam Al Azhar 3",
+			"url": "https://tkia3.al-azhar.sch.id"
+		},
+		{
+			"title": "TK Islam Al Azhar 35",
+			"url": "https://tkia35.al-azhar.sch.id"
+		},
+		{
+			"title": "TK Islam Al Azhar 36",
+			"url": "https://tkia36.al-azhar.sch.id"
+		},
+		{
+			"title": "TK Islam Al Azhar 45",
+			"url": "https://tkia45.al-azhar.sch.id"
+		},
+		{
+			"title": "TK Islam Al Azhar 50",
+			"url": "https://tkia50.al-azhar.sch.id"
+		},
+		{
+			"title": "TK Islam Al Azhar 51",
+			"url": "https://tkia51.al-azhar.sch.id"
+		},
+		{
+			"title": "TK Islam Al Azhar 54",
+			"url": "https://tkia54.al-azhar.sch.id"
+		},
+		{
+			"title": "TK Islam Al Azhar 56",
+			"url": "https://tkia56.al-azhar.sch.id"
+		},
+		{
+			"title": "TK Islam Al Azhar 6",
+			"url": "https://tkia6.al-azhar.sch.id"
+		},
+		{
+			"title": "TK Islam Al Azhar 65",
+			"url": "https://tkia65.al-azhar.sch.id"
+		},
+		{
+			"title": "TK Islam Al Azhar 67",
+			"url": "https://tkia67.al-azhar.sch.id"
+		}
+	]
+	"sd": [
+		{
+			"title": "SD Islam Al Azhar 1 Kebayoran Baru",
+			"url": "https://sdia1.al-azhar.sch.id"
+		},
+		{
+			"title": "SD Islam Al Azhar 12",
+			"url": "https://sdia12.al-azhar.sch.id"
+		},
+		{
+			"title": "SD Islam Al Azhar 17",
+			"url": "https://sdia17.al-azhar.sch.id"
+		},
+		{
+			"title": "SD Islam Al Azhar 18",
+			"url": "https://sdia18.al-azhar.sch.id"
+		},
+		{
+			"title": "SD Islam Al Azhar 19",
+			"url": "https://sdia19.al-azhar.sch.id"
+		},
+		{
+			"title": "SD Islam Al Azhar 2",
+			"url": "https://sdia2.al-azhar.sch.id"
+		},
+		{
+			"title": "SD Islam Al Azhar 26",
+			"url": "https://sdia26.al-azhar.sch.id"
+		},
+		{
+			"title": "SD Islam Al Azhar 27",
+			"url": "https://sdia27.al-azhar.sch.id"
+		},
+		{
+			"title": "SD Islam Al Azhar 35",
+			"url": "https://sdia35.al-azhar.sch.id"
+		},
+		{
+			"title": "SD Islam Al Azhar 36",
+			"url": "https://sdia36.al-azhar.sch.id"
+		},
+		{
+			"title": "SD Islam Al Azhar 46",
+			"url": "https://sdia46.al-azhar.sch.id"
+		},
+		{
+			"title": "SD Islam Al Azhar 51",
+			"url": "https://sdia51.al-azhar.sch.id"
+		},
+		{
+			"title": "SD Islam Al Azhar 54",
+			"url": "https://sdia54.al-azhar.sch.id"
+		},
+		{
+			"title": "SD Islam Al Azhar 56",
+			"url": "https://sdia56.al-azhar.sch.id"
+		},
+		{
+			"title": "SD Islam Al Azhar 7",
+			"url": "https://sdia7.al-azhar.sch.id"
+		},
+		{
+			"title": "SD Islam Al Azhar 70",
+			"url": "https://sdia70.al-azhar.sch.id"
+		},
+		{
+			"title": "SD Islam Al Azhar 71",
+			"url": "https://sdia71.al-azhar.sch.id"
+		},
+		
+	]
+	"smp": [
+		{
+			"title": "SMP Islam Al Azhar 1 Kebayoran Baru",
+			"url": "https://smpia1.al-azhar.sch.id"
+		},
+		{
+			"title": "SMP Islam Al Azhar 2",
+			"url": "https://smp-alazhar2.sch.id"
+		},
+		{
+			"title": "SMP Islam Al Azhar 3",
+			"url": "https://smpia3.al-azhar.sch.id"
+		},
+		{
+			"title": "SMP Islam Al Azhar 16",
+			"url": "https://smpia16.al-azhar.sch.id"
+		},
+		{
+			"title": "SMP Islam Al Azhar 20",
+			"url": "https://smpia20.al-azhar.sch.id"
+		},
+		{
+			"title": "SMP Islam Al Azhar 22",
+			"url": "https://smpia22.al-azhar.sch.id"
+		},
+		{
+			"title": "SMP Islam Al Azhar 25",
+			"url": "https://smpia25.al-azhar.sch.id"
+		},
+		{
+			"title": "SMP Islam Al Azhar 28",
+			"url": "https://smpia28.al-azhar.sch.id"
+		},
+		{
+			"title": "SMP Islam Al Azhar 35",
+			"url": "https://smpia35.al-azhar.sch.id"
+		},
+		{
+			"title": "SMP Islam Al Azhar 36",
+			"url": "https://smpia36.al-azhar.sch.id"
+		},
+		{
+			"title": "SMP Islam Al Azhar 37",
+			"url": "https://smpia37.al-azhar.sch.id"
+		},
+		{
+			"title": "SMP Islam Al Azhar 52",
+			"url": "https://smpia52.al-azhar.sch.id"
+		},
+		{
+			"title": "SMP Islam Al Azhar 54",
+			"url": "https://smpia54.al-azhar.sch.id"
+		},
+		{
+			"title": "SMP Islam Al Azhar 56",
+			"url": "https://smpia56.al-azhar.sch.id"
+		}
+	]
+	"sma": [
+		{
+			"title": "SMA Islam Al Azhar 1 Kebayoran Baru",
+			"url": "https://smaia1.al-azhar.sch.id"
+		},
+		{
+			"title": "SMA Islam Al Azhar 2",
+			"url": "https://smaia2.al-azhar.sch.id"
+		},
+		{
+			"title": "SMA Islam Al Azhar 2",
+			"url": "https://smaia2.al-azhar.sch.id"
+		},
+		{
+			"title": "SMA Islam Al Azhar 22",
+			"url": "https://smaia22.al-azhar.sch.id"
+		},
+		{
+			"title": "SMA Islam Al Azhar 3 Kebayoran Baru",
+			"url": "https://smaialazhar3.sch.id"
+		}
+	]
+}
