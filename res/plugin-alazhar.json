@@ -1,0 +1,23 @@
+{
+  "name": "Plugin Al Azhar",
+  "slug": "plugin-alazhar",
+  "version": "1.0.0",
+  "tested": "6.4.2",
+  "requires": "6.2",
+  "author": "pudin.my.id",
+  "author_profile": "",
+  "download_url": "https://www.pudin.my.id/plugins/plugin-alazhar-v1.0.0.zip",
+  "requires_php": "7.4",
+  "last_update": "2024-03-01 00:00:00",
+  "sections": {
+    "description": "<p>Plugin Al Azhar</p>",
+    "installation": "",
+    "frequently_asked_questions": "",
+    "screenshots": "",
+    "changelog": "<h4>Update</h4><ul><li>Untuk melihat plugin lainya bisa cek di <a href='https://www.pudin.my.id/'>https://www.pudin.my.id/</a></li></ul>"
+  },
+  "banners": {
+    "low": "",
+    "high": ""
+  }
+}
