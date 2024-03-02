@@ -1,10 +1,9 @@
-[{
+{
 	"bannerimage": "https://al-azhar.sch.id/wordpress.png",
     "urlbannerimage": "https://al-azhar.sch.id",
     "tglperubahan" : "2024-03-01 00:00:00",
 	"dki_jakarta": 
-	[
-		{
+	[{
 			"kebayoran_baru" : [
 				{
 					"title": "TK Islam Al Azhar 1 Kebayoran Baru",
@@ -27,6 +26,5 @@
 					"url": "https://smaialazhar3.sch.id"
 				},
 			]
-		}
-	]
-}]
+	}]
+}
