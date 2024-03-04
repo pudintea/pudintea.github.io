@@ -187,6 +187,149 @@
 				}
 			]
 		}
+	],
+	"jawa_tengah": [
+		{
+			"pati": [
+				{
+					"title": "KB-TK Islam Al Azhar 48 Pati",
+					"url": "https://al-azharpati.sch.id/"
+				},
+				{
+					"title": "SD Islam Al Azhar 47 Pati",
+					"url": "https://al-azharpati.sch.id/"
+				},
+				{
+					"title": "SMP Islam Al Azhar 46 Pati",
+					"url": "https://al-azharpati.sch.id/"
+				},
+				{
+					"title": "SMA Islam Al Azhar 32 Pati",
+					"url": "https://al-azharpati.sch.id/"
+				}
+			]
+		}
+	],
+	"jawa_timur": [
+		{
+			"surabaya": [
+				{
+					"title": "TK Islam Al Azhar 15 Surabaya",
+					"url": "https://tkia15.al-azhar.sch.id"
+				},
+				{
+					"title": "TK Islam Al Azhar 35 Surabaya",
+					"url": "https://tkia35.al-azhar.sch.id"
+				},
+				{
+					"title": "SD Islam Al Azhar 11 Surabaya",
+					"url": "https://sdia11.al-azhar.sch.id/"
+				},
+				{
+					"title": "SD Islam Al Azhar 35 Surabaya",
+					"url": "https://sdia35.al-azhar.sch.id"
+				},
+				{
+					"title": "SMP Islam Al Azhar 13 Surabaya",
+					"url": "https://smpia13.al-azhar.sch.id"
+				}
+			],
+			"sidoarjo": [
+				{
+					"title": "TK Islam Al Azhar 52 Sidoarjo",
+					"url": "https://tkia52.al-azhar.sch.id"
+				},
+				{
+					"title": "SD Islam Al Azhar 52 Sidoarjo",
+					"url": "https://sdia52.al-azhar.sch.id"
+				}
+			],
+			"malang": [
+				{
+					"title": "TK Islam Al Azhar 56 Malang",
+					"url": "https://tkia56.al-azhar.sch.id"
+				},
+				{
+					"title": "SD Islam Al Azhar 56 Malang",
+					"url": "https://sdia56.al-azhar.sch.id"
+				}
+			],
+			"blitar": [
+				{
+					"title": "TK Islam Al Azhar 67 Blitar",
+					"url": "https://tkia67.al-azhar.sch.id"
+				}
+			]
+		}
+	],
+	"sumatra": [
+		{
+			"palembang": [
+				{
+					"title": "TK Islam Al Azhar 41 Palembang",
+					"url": "https://alazharpalembang.or.id/"
+				},
+				{
+					"title": "SD Islam Al Azhar 45 Palembang",
+					"url": "https://alazharpalembang.or.id/"
+				},
+				{
+					"title": "SMP Islam Al Azhar 33 Palembang",
+					"url": "https://alazharpalembang.or.id/"
+				}
+			]
+		},
+		{
+			"riau": [
+				{
+					"title": "TK Islam Al Azhar 54 Riau",
+					"url": "https://tkia54.al-azhar.sch.id"
+				},
+				{
+					"title": "SD Islam Al Azhar 54 Riau",
+					"url": "https://sdia54.al-azhar.sch.id"
+				},
+				{
+					"title": "SMP Islam Al Azhar 37 Riau",
+					"url": "https://smpia37.al-azhar.sch.id"
+				}
+			]
+		},
+		{
+			"bengkulu": [
+				{
+					"title": "TK Islam Al Azhar 50 Bengkulu",
+					"url": "https://tkia50.al-azhar.sch.id"
+				},
+				{
+					"title": "SD Islam Al Azhar 51 Bengkulu",
+					"url": "https://sdia51.al-azhar.sch.id"
+				},
+				{
+					"title": "SMP Islam Al Azhar 52 Bengkulu",
+					"url": "https://smpia52.al-azhar.sch.id"
+				}
+			]
+		},
+		{
+			"bandar_lampung": [
+				{
+					"title": "TK Islam Al Azhar 49 Bandar Lampung",
+					"url": "https://tkia50.al-azhar.sch.id"
+				},
+				{
+					"title": "SD Islam Al Azhar 50 Bandar Lampung",
+					"url": "https://sdia51.al-azhar.sch.id"
+				}
+			]
+		},
+		{
+			"bukittinggi": [
+				{
+					"title": "SD Islam Al Azhar 67 Bukittinggi",
+					"url": "https://sdia67.al-azhar.sch.id"
+				}
+			]
+		}
 	]
 }
-
