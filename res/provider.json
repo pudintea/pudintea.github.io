@@ -19,6 +19,56 @@
 			"kampus":"Kebayoran Baru",
 			"provider": "Iforte",
 			"bandwidth": "500"
+		},
+		{
+			"kampus":"Pejaten",
+			"provider": "Biznet (Edu)",
+			"bandwidth": "320"
+		},
+		{
+			"kampus":"Pasar Minggu",
+			"provider": "Moratelindo",
+			"bandwidth": "100"
+		},
+		{
+			"kampus":"Bintaro",
+			"provider": "Biznet (Edu)",
+			"bandwidth": "320"
+		},
+		{
+			"kampus":"Sentra Primer",
+			"provider": "Moratelindo",
+			"bandwidth": "300"
+		},
+		{
+			"kampus":"Cikarang",
+			"provider": "Biznet",
+			"bandwidth": "320"
+		},
+		{
+			"kampus":"Tangerang Selatan (Pamulang)",
+			"provider": "SDI",
+			"bandwidth": "100"
+		},
+		{
+			"kampus":"Cigombong",
+			"provider": "Icon Plus",
+			"bandwidth": "30"
+		},
+		{
+			"kampus":"Cianjur",
+			"provider": "Icon Plus",
+			"bandwidth": "100"
+		},
+		{
+			"kampus":"Bandung",
+			"provider": "Biznet (Edu)",
+			"bandwidth": "140"
+		},
+		{
+			"kampus":"Pekanbaru",
+			"provider": "Solnet",
+			"bandwidth": "300"
 		}
 	]
 }
