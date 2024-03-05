@@ -37,6 +37,32 @@
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="datatables/jquery.dataTables.min.js"></script>
-    <script src="datatables/dataTables.bootstrap4.min.js"></script>   
+    <script src="datatables/dataTables.bootstrap4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var table = $('#datatables').DataTable({
+                processing: true,
+                ajax: 'res/data_sekolah.json',
+                order: [[1, 'asc']],
+                columns: [
+                    { "data": "jenjang",
+                      "class": "align-top text-center"
+                    },
+                    { data: 'title' },
+                    { data: 'provinsi' },
+                    { data: 'daerah' },
+                    {
+                        "orderable": false,
+                        "searchable": false,
+                        "class": "align-top text-center",
+                        "render": function(data, type, row) {
+                            var html = "<a href='" + row.url + "' class='badge badge-primary' target='_blank'>Website</a>";
+                            return html;
+                        }
+                    }
+                ]
+            });
+        });
+    </script> 
 </body>
 </html>
