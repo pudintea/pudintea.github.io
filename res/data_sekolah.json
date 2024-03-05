@@ -1,0 +1,417 @@
+{
+	"data" : [ 
+		{
+			"jenjang":"TK",
+			"title": "TK Islam AL Azhar 1 Kebayoran Baru",
+			"url": "https://tkia1.al-azhar.sch.id",
+			"provinsi": "DKI Jakarta",
+			"daerah": "Kebayoran Baru"
+		},
+		{
+			"jenjang":"SD",
+			"title": "SD Islam AL Azhar 1 Kebayoran Baru",
+			"url": "https://sdia1.al-azhar.sch.id",
+			"provinsi": "DKI Jakarta",
+			"daerah": "Kebayoran Baru"
+		},
+		{
+			"jenjang":"SMP",
+			"title": "SMP Islam AL Azhar 1 Kebayoran Baru",
+			"url": "https://smpia1.al-azhar.sch.id",
+			"provinsi": "DKI Jakarta",
+			"daerah": "Kebayoran Baru"
+		},
+		{
+			"jenjang":"SMA",
+			"title": "SMA Islam AL Azhar 1 Kebayoran Baru",
+			"url": "https://smaia1.al-azhar.sch.id",
+			"provinsi": "DKI Jakarta",
+			"daerah": "Kebayoran Baru"
+		},
+		{
+			"jenjang":"SMA",
+			"title": "SMA Islam AL Azhar 3 Kebayoran Baru",
+			"url": "https://smaialazhar3.sch.id",
+			"provinsi": "DKI Jakarta",
+			"daerah": "Kebayoran Baru"
+		},
+		{
+			"jenjang":"TK",
+			"title": "TK Islam Al Azhar 6 Sentra Primer",
+			"url": "https://tkia6.al-azhar.sch.id",
+			"provinsi": "DKI Jakarta",
+			"daerah": "Sentra Primer"
+		},
+		{
+			"jenjang":"SD",
+			"title": "SD Islam Al Azhar 19 Sentra Primer",
+			"url": "https://sdia19.al-azhar.sch.id",
+			"provinsi": "DKI Jakarta",
+			"daerah": "Sentra Primer"
+		},
+		{
+			"jenjang":"SMP",
+			"title": "SMP Islam Al Azhar 22 Sentra Primer",
+			"url": "https://smpia22.al-azhar.sch.id",
+			"provinsi": "DKI Jakarta",
+			"daerah": "Sentra Primer"
+		},
+		{
+			"jenjang":"SMP",
+			"title": "SMP Islam Al Azhar 2 Pejaten",
+			"url": "https://smp-alazhar2.sch.id/",
+			"provinsi": "DKI Jakarta",
+			"daerah": "Pejaten"
+		},
+		{
+			"jenjang":"SMA",
+			"title": "SMA Islam Al Azhar 2 Pejaten",
+			"url": "https://smaia2.al-azhar.sch.id",
+			"provinsi": "DKI Jakarta",
+			"daerah": "Pejaten"
+		},
+		{
+			"jenjang":"TK",
+			"title": "TK Islam Al Azhar 2 Pasar Minggu",
+			"url": "https://tkia2.al-azhar.sch.id",
+			"provinsi": "DKI Jakarta",
+			"daerah": "Pasar Minggu"
+		},
+		{
+			"jenjang":"SD",
+			"title": "SD Islam Al Azhar 2 Pasar Minggu",
+			"url": "https://sdia2.al-azhar.sch.id",
+			"provinsi": "DKI Jakarta",
+			"daerah": "Pasar Minggu"
+		},
+		{
+			"jenjang":"TK",
+			"title": "TK Islam Al Azhar 12 Cikarang",
+			"url": "https://tkia12.al-azhar.sch.id",
+			"provinsi": "Jawa Barat",
+			"daerah": "Cikarang"
+		},
+		{
+			"jenjang":"SD",
+			"title": "SD Islam Al Azhar 12 Cikarang",
+			"url": "https://sdia12.al-azhar.sch.id",
+			"provinsi": "Jawa Barat",
+			"daerah": "Cikarang"
+		},
+		{
+			"jenjang":"SMP",
+			"title": "SMP Islam Al Azhar 16 Cikarang",
+			"url": "https://sdia16.al-azhar.sch.id",
+			"provinsi": "Jawa Barat",
+			"daerah": "Cikarang"
+		},
+		{
+			"jenjang":"SMA",
+			"title": "SMA Islam Al Azhar 22 Cikarang",
+			"url": "https://smaia22.al-azhar.sch.id",
+			"provinsi": "Jawa Barat",
+			"daerah": "Cikarang"
+		},
+		{
+			"jenjang":"TK",
+			"title": "TK Islam Al Azhar 27 Cibinong",
+			"url": "https://tkia27.al-azhar.sch.id",
+			"provinsi": "Jawa Barat",
+			"daerah": "Cibinong"
+		},
+		{
+			"jenjang":"SD",
+			"title": "SD Islam Al Azhar 27 Cibinong",
+			"url": "https://sdia27.al-azhar.sch.id",
+			"provinsi": "Jawa Barat",
+			"daerah": "Cibinong"
+		},
+		{
+			"jenjang":"SMP",
+			"title": "SMP Islam Al Azhar 28 Cibinong",
+			"url": "https://smpia28.al-azhar.sch.id",
+			"provinsi": "Jawa Barat",
+			"daerah": "Cibinong"
+		},
+		{
+			"jenjang":"TK",
+			"title": "TK Islam Al Azhar 18 Cianjur",
+			"url": "https://tkia18.al-azhar.sch.id",
+			"provinsi": "Jawa Barat",
+			"daerah": "Cianjur"
+		},
+		{
+			"jenjang":"SD",
+			"title": "SD Islam Al Azhar 18 Cianjur",
+			"url": "https://sdia18.al-azhar.sch.id",
+			"provinsi": "Jawa Barat",
+			"daerah": "Cianjur"
+		},
+		{
+			"jenjang":"SMP",
+			"title": "SMP Islam Al Azhar 20 Cianjur",
+			"url": "https://smpia20.al-azhar.sch.id",
+			"provinsi": "Jawa Barat",
+			"daerah": "Cianjur"
+		},
+		{
+			"jenjang":"TK",
+			"title": "TK Islam Al Azhar 30 Bandung",
+			"url": "https://www.al-azhar.or.id",
+			"provinsi": "Jawa Barat",
+			"daerah": "Bandung"
+		},
+		{
+			"jenjang":"SD",
+			"title": "SD Islam Al Azhar 30 Bandung",
+			"url": "https://www.al-azhar.or.id",
+			"provinsi": "Jawa Barat",
+			"daerah": "Bandung"
+		},
+		{
+			"jenjang":"SD",
+			"title": "SD Islam Al Azhar 36 Bandung",
+			"url": "https://sdia36.al-azhar.sch.id",
+			"provinsi": "Jawa Barat",
+			"daerah": "Bandung"
+		},
+		{
+			"jenjang":"SMP",
+			"title": "SMP Islam Al Azhar 36 Bandung",
+			"url": "https://smpia36.al-azhar.sch.id",
+			"provinsi": "Jawa Barat",
+			"daerah": "Bandung"
+		},
+		{
+			"jenjang":"TK",
+			"title": "TK Islam Al Fauzien",
+			"url": "https://www.alfauzien.sch.id/",
+			"provinsi": "Jawa Barat",
+			"daerah": "Depok"
+		},
+		{
+			"jenjang":"SD",
+			"title": "SD Islam Al Fauzien",
+			"url": "https://www.alfauzien.sch.id/",
+			"provinsi": "Jawa Barat",
+			"daerah": "Depok"
+		},
+		{
+			"jenjang":"SMA",
+			"title": "SMA Islam Al Azhar 24 Boarding",
+			"url": "https://smaia24boarding.al-azhar.sch.id",
+			"provinsi": "Jawa Barat",
+			"daerah": "Cigombong"
+		},
+		{
+			"jenjang":"TK",
+			"title": "TK Islam Al Azhar 17 Bintaro",
+			"url": "https://tkia17.al-azhar.sch.id",
+			"provinsi": "Banten",
+			"daerah": "Bintaro"
+		},
+		{
+			"jenjang":"SD",
+			"title": "SD Islam Al Azhar 17 Bintaro",
+			"url": "https://sdia17.al-azhar.sch.id",
+			"provinsi": "Banten",
+			"daerah": "Bintaro"
+		},
+		{
+			"jenjang":"SMP",
+			"title": "SMP Islam Al Azhar 17 Bintaro",
+			"url": "https://sdia17.al-azhar.sch.id",
+			"provinsi": "Banten",
+			"daerah": "Bintaro"
+		},
+		{
+			"jenjang":"SMP",
+			"title": "SMP Islam Al Azhar 25 Tangerang Selatan",
+			"url": "https://smpia25.al-azhar.sch.id",
+			"provinsi": "Banten",
+			"daerah": "Tangerang Selatan"
+		},
+		{
+			"jenjang":"TK",
+			"title": "KB-TK Islam Al Azhar 48 Pati",
+			"url": "https://al-azharpati.sch.id/",
+			"provinsi": "Jawa Tengah",
+			"daerah": "Pati"
+		},
+		{
+			"jenjang":"SD",
+			"title": "SD Islam Al Azhar 47 Pati",
+			"url": "https://al-azharpati.sch.id/",
+			"provinsi": "Jawa Tengah",
+			"daerah": "Pati"
+		},
+		{
+			"jenjang":"SMP",
+			"title": "SMP Islam Al Azhar 46 Pati",
+			"url": "https://al-azharpati.sch.id/",
+			"provinsi": "Jawa Tengah",
+			"daerah": "Pati"
+		},
+		{
+			"jenjang":"SMA",
+			"title": "SMA Islam Al Azhar 32 Pati",
+			"url": "https://al-azharpati.sch.id/",
+			"provinsi": "Jawa Tengah",
+			"daerah": "Pati"
+		},
+		{
+			"jenjang":"TK",
+			"title": "TK Islam Al Azhar 15 Surabaya",
+			"url": "https://tkia15.al-azhar.sch.id",
+			"provinsi": "Jawa Timur",
+			"daerah": "Surabaya"
+		},
+		{
+			"jenjang":"TK",
+			"title": "TK Islam Al Azhar 35 Surabaya",
+			"url": "https://tkia35.al-azhar.sch.id",
+			"provinsi": "Jawa Timur",
+			"daerah": "Surabaya"
+		},
+		{
+			"jenjang":"SD",
+			"title": "SD Islam Al Azhar 11 Surabaya",
+			"url": "https://sdia11.al-azhar.sch.id/",
+			"provinsi": "Jawa Timur",
+			"daerah": "Surabaya"
+		},
+		{
+			"jenjang":"SD",
+			"title": "SD Islam Al Azhar 35 Surabaya",
+			"url": "https://sdia35.al-azhar.sch.id",
+			"provinsi": "Jawa Timur",
+			"daerah": "Surabaya"
+		},
+		{
+			"jenjang":"SMP",
+			"title": "SMP Islam Al Azhar 13 Surabaya",
+			"url": "https://smpia13.al-azhar.sch.id",
+			"provinsi": "Jawa Timur",
+			"daerah": "Surabaya"
+		},
+		{
+			"jenjang":"TK",
+			"title": "TK Islam Al Azhar 52 Sidoarjo",
+			"url": "https://tkia52.al-azhar.sch.id",
+			"provinsi": "Jawa Timur",
+			"daerah": "Sidoarjo"
+		},
+		{
+			"jenjang":"SD",
+			"title": "SD Islam Al Azhar 52 Sidoarjo",
+			"url": "https://sdia52.al-azhar.sch.id",
+			"provinsi": "Jawa Timur",
+			"daerah": "Sidoarjo"
+		},
+		{
+			"jenjang":"TK",
+			"title": "TK Islam Al Azhar 56 Malang",
+			"url": "https://tkia56.al-azhar.sch.id",
+			"provinsi": "Jawa Timur",
+			"daerah": "Malang"
+		},
+		{
+			"jenjang":"SD",
+			"title": "SD Islam Al Azhar 56 Malang",
+			"url": "https://sdia56.al-azhar.sch.id",
+			"provinsi": "Jawa Timur",
+			"daerah": "Malang"
+		},
+		{
+			"jenjang":"TK",
+			"title": "TK Islam Al Azhar 67 Blitar",
+			"url": "https://tkia67.al-azhar.sch.id",
+			"provinsi": "Jawa Timur",
+			"daerah": "Blitar"
+		},
+		{
+			"jenjang":"TK",
+			"title": "TK Islam Al Azhar 41 Palembang",
+			"url": "https://alazharpalembang.or.id/",
+			"provinsi": "Sumatra",
+			"daerah": "Palembang"
+		},
+		{
+			"jenjang":"SD",
+			"title": "SD Islam Al Azhar 45 Palembang",
+			"url": "https://alazharpalembang.or.id/",
+			"provinsi": "Sumatra",
+			"daerah": "Palembang"
+		},
+		{
+			"jenjang":"SMP",
+			"title": "SMP Islam Al Azhar 33 Palembang",
+			"url": "https://alazharpalembang.or.id/",
+			"provinsi": "Sumatra",
+			"daerah": "Palembang"
+		},
+		{
+			"jenjang":"TK",
+			"title": "TK Islam Al Azhar 54 Riau",
+			"url": "https://tkia54.al-azhar.sch.id",
+			"provinsi": "Sumatra",
+			"daerah": "Riau"
+		},
+		{
+			"jenjang":"SD",
+			"title": "SD Islam Al Azhar 54 Riau",
+			"url": "https://sdia54.al-azhar.sch.id",
+			"provinsi": "Sumatra",
+			"daerah": "Riau"
+		},
+		{
+			"jenjang":"SMP",
+			"title": "SMP Islam Al Azhar 37 Riau",
+			"url": "https://smpia37.al-azhar.sch.id",
+			"provinsi": "Sumatra",
+			"daerah": "Riau"
+		},
+		{
+			"jenjang":"TK",
+			"title": "TK Islam Al Azhar 50 Bengkulu",
+			"url": "https://tkia50.al-azhar.sch.id",
+			"provinsi": "Sumatra",
+			"daerah": "Bengkulu"
+		},
+		{
+			"jenjang":"SD",
+			"title": "SD Islam Al Azhar 51 Bengkulu",
+			"url": "https://sdia51.al-azhar.sch.id",
+			"provinsi": "Sumatra",
+			"daerah": "Bengkulu"
+		},
+		{
+			"jenjang":"SMP",
+			"title": "SMP Islam Al Azhar 52 Bengkulu",
+			"url": "https://smpia52.al-azhar.sch.id",
+			"provinsi": "Sumatra",
+			"daerah": "Bengkulu"
+		},
+		{
+			"jenjang":"TK",
+			"title": "TK Islam Al Azhar 49 Bandar Lampung",
+			"url": "https://tkia50.al-azhar.sch.id",
+			"provinsi": "Sumatra",
+			"daerah": "Bandar Lampung"
+		},
+		{
+			"jenjang":"SD",
+			"title": "SD Islam Al Azhar 50 Bandar Lampung",
+			"url": "https://sdia51.al-azhar.sch.id",
+			"provinsi": "Sumatra",
+			"daerah": "Bandar Lampung"
+		},
+		{
+			"jenjang":"SD",
+			"title": "SD Islam Al Azhar 67 Bukittinggi",
+			"url": "https://sdia67.al-azhar.sch.id",
+			"provinsi": "Sumatra",
+			"daerah": "Bukittinggi"
+		}
+	]
+}
