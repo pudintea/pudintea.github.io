@@ -1,0 +1,24 @@
+{
+	"data" : [ 
+		{
+			"kampus":"Kebayoran Baru",
+			"provider": "Biznet (Edu)",
+			"bandwidth": "500",
+		},
+		{
+			"kampus":"Kebayoran Baru",
+			"provider": "Biznet (Corp)",
+			"bandwidth": "40",
+		},
+		{
+			"kampus":"Kebayoran Baru",
+			"provider": "Moratelindo",
+			"bandwidth": "200",
+		},
+		{
+			"kampus":"Kebayoran Baru",
+			"provider": "Iforte",
+			"bandwidth": "500",
+		}
+	]
+}
