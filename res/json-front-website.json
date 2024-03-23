@@ -2,7 +2,7 @@
 	"front-website":[
 		{
 			"link" : "https://www.al-azhar.or.id",
-			"thumbnail" : "https://www.al-azhar.or.id/images.jpg"
+			"thumbnail" : "https://www.al-azhar.or.id/images.jpg",
 			"title" : "Ini adalah Judul Artikelnya",
 			"content" : "Ini adalah artikelnya yang sedikit",
 			"tanggal" : "23 Maret 2024",
