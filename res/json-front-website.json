@@ -14,5 +14,37 @@
 		"content" : "Ini adalah artikelnya yang sedikit 2",
 		"tanggal" : "23 Maret 2024",
 		"author" : "YPI Al Azhar"
+	},
+	{
+		"link" : "https://www.al-azhar.or.id",
+		"thumbnail" : "https://www.al-azhar.or.id/images.jpg",
+		"title" : "Ini adalah Judul Artikelnya 3",
+		"content" : "Ini adalah artikelnya yang sedikit 3",
+		"tanggal" : "23 Maret 2024",
+		"author" : "YPI Al Azhar"
+	},
+	{
+		"link" : "https://www.al-azhar.or.id",
+		"thumbnail" : "https://www.al-azhar.or.id/images.jpg",
+		"title" : "Ini adalah Judul Artikelnya 4",
+		"content" : "Ini adalah artikelnya yang sedikit 4",
+		"tanggal" : "23 Maret 2024",
+		"author" : "YPI Al Azhar"
+	},
+	{
+		"link" : "https://www.al-azhar.or.id",
+		"thumbnail" : "https://www.al-azhar.or.id/images.jpg",
+		"title" : "Ini adalah Judul Artikelnya 5",
+		"content" : "Ini adalah artikelnya yang sedikit 5",
+		"tanggal" : "23 Maret 2024",
+		"author" : "YPI Al Azhar"
+	},
+	{
+		"link" : "https://www.al-azhar.or.id",
+		"thumbnail" : "https://www.al-azhar.or.id/images.jpg",
+		"title" : "Ini adalah Judul Artikelnya 6",
+		"content" : "Ini adalah artikelnya yang sedikit 6",
+		"tanggal" : "23 Maret 2024",
+		"author" : "YPI Al Azhar"
 	}
 ]
