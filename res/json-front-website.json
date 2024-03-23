@@ -1,10 +1,9 @@
 [
 	{
 		"link" : "https://www.al-azhar.or.id",
-		"thumbnail" : "https://www.al-azhar.or.id/images.jpg",
+		"pudin_thumbnail_img_url" : "https://www.al-azhar.or.id/images.jpg",
 		"title" : { "rendered":"Ini adalah Judul Artikelnya"},
-		"content" : "Ini adalah artikelnya yang sedikit",
-		"tanggal" : "23 Maret 2024",
-		"author" : "YPI Al Azhar"
+		"excerpt" : {"rendered":"Ini adalah excerpt"},
+		"date" : "2024-03-21T13:31:58"
 	}
 ]
