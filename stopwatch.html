@@ -9,16 +9,20 @@
   </head>
   <body style="background-color:#eee;">
     <div class="container mt-4 text-center">
-        <div class="alert alert-primary text-center" role="alert">
-          <div id="display" style="font-size: 5rem; font-family: monospace; font-weight: bold;">
-            00:00:00:00
-          </div>
-          <div id="controls" class="mt-4 text-center">
-            <button id="startBtn" onclick="start()" class="btn btn-primary">Start</button>
-            <button id="stopBtn" onclick="stop()" class="btn btn-danger">Stop</button>
-            <button id="resetBtn" onclick="reset()" class="btn btn-info">Reset</button>
+      <div class="col">
+        <div class="row">
+          <div class="alert alert-primary text-center" role="alert">
+            <div id="display" class="display-2" style="font-family: monospace; font-weight: bold;">
+              00:00:00:00
+            </div>
+            <div id="controls" class="mt-4 text-center">
+              <button id="startBtn" onclick="start()" class="btn btn-primary">Start</button>
+              <button id="stopBtn" onclick="stop()" class="btn btn-danger">Stop</button>
+              <button id="resetBtn" onclick="reset()" class="btn btn-info">Reset</button>
+            </div>
           </div>
         </div>
+      </div>
     </div>
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
