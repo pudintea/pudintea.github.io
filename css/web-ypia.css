@@ -63,6 +63,18 @@
     left: 30px;
 }
 
+/* Sticky Topvar dan Navbar */
+.sticky-topbar {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+}
+.sticky-navbar {
+  position: sticky;
+  top: 50px; /* Adjust this value based on the height of your top bar */
+  z-index: 1020;
+}
+
 /* Add WA floating button CSS */
 .wa-floating {
   position: fixed;
