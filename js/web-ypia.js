@@ -6,7 +6,7 @@ $.getJSON(urlPDN, function(hasil){
 		//console.log(data);
 		//var dadate = data.date;
 		//var hasil_dadate = toDateString(dadate);
-		$('#berita-terbaru').append(`<div class="col mb-2">
+		$('#berita-terkini').append(`<div class="col mb-2">
 					<div class="card h-100">
 						<img class="card-img-top" src="`+data.pudin_thumbnail_img_url+`" alt="`+data.title.rendered+`">
 						<div class="card-body">
