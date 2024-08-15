@@ -159,17 +159,17 @@
       <div class="row mt-5 text-center">
 	      <div class="col text-center">
 		      <i class="fa fa-users fa-2xl pdn-icon-counter text-primary" aria-hidden="true"></i>
-		      <h1>61370</h1>
+		      <h1 class="pdn-jumlah-murid" data-count="61370">0</h1>
 		      <h3 class="mt-2 text-primary">MURID AL AZHAR</h3>
 	      </div>
 	      <div class="col text-center">
 		      <i class="fa fa-graduation-cap fa-2xl pdn-icon-counter text-primary" aria-hidden="true"></i>
-		      <h1>7756</h1>
+		      <h1 class="pdn-jumlah-pegawai" data-count="7756">0</h1>
 		      <h3 class="mt-2 text-primary">GURU & PEGAWAI AL AZHAR</h3>
 	      </div>
 	      <div class="col text-center">
 		      <i class="fa fa-university fa-2xl pdn-icon-counter text-primary" aria-hidden="true"></i>
-		      <h1>220</h1>
+		      <h1 class="pdn-jumlah-sekolah" data-count="220">0</h1>
 		      <h3 class="mt-2 text-primary">SEKOLAH AL AZHAR</h3>
 	      </div>
       </div>
@@ -227,5 +227,50 @@
           });
       });
   </script>
+<script>
+        $(document).ready(function(){
+            $('.pdn-jumlah-murid').each(function(){
+                var $this = $(this);
+                var countTo = $this.attr('data-count');
+                $this.countTo({
+                    from: 0,
+                    to: countTo,
+                    speed: 2000,
+                    refreshInterval: 50,
+                    onComplete: function(value) {
+                        console.debug(this);
+                    }
+                });
+            });
+
+            $('.pdn-jumlah-pegawai').each(function(){
+                var $this = $(this);
+                var countTo = $this.attr('data-count');
+                $this.countTo({
+                    from: 0,
+                    to: countTo,
+                    speed: 2000,
+                    refreshInterval: 50,
+                    onComplete: function(value) {
+                        console.debug(this);
+                    }
+                });
+            });
+
+            $('.pdn-jumlah-sekolah').each(function(){
+                var $this = $(this);
+                var countTo = $this.attr('data-count');
+                $this.countTo({
+                    from: 0,
+                    to: countTo,
+                    speed: 2000,
+                    refreshInterval: 50,
+                    onComplete: function(value) {
+                        console.debug(this);
+                    }
+                });
+            });
+        });
+    </script>
   </body>
 </html>
