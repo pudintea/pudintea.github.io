@@ -88,6 +88,25 @@
     </nav>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="js/web-ypia.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.dropdown-submenu .dropdown-toggle').forEach(function (element) {
+          element.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            this.nextElementSibling.classList.toggle('show');
+          });
+        });
+
+        // Close all submenus when clicking outside
+        document.addEventListener('click', function (e) {
+          if (!e.target.matches('.dropdown-toggle')) {
+            document.querySelectorAll('.dropdown-menu').forEach(function (menu) {
+              menu.classList.remove('show');
+            });
+          }
+        });
+      });
+    </script>
   </body>
 </html>
