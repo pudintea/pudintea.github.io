@@ -1,10 +1,82 @@
 {
   "data": [
     {
-      "tanggal": "29-10-2024",
-      "nama_unit": "TK Islam Al Azhar 01",
-      "keterangan": "Murotal",
-      "status": "Pending"
+      "tanggal": "28-10-2024",
+      "nama_unit": "TKIA 18 Cianjur",
+      "keterangan": "Instagram & Tiktok ga muncul di home",
+      "status": "Proses"
+    },
+	{
+      "tanggal": "28-10-2024",
+      "nama_unit": "SDIA 18 Cianjur",
+      "keterangan": "Gabisa uploade Template elementor",
+      "status": "Proses"
+    },
+	{
+      "tanggal": "28-10-2024",
+      "nama_unit": "SMPIA 20 Cianjur",
+      "keterangan": "Yotu wp nya gabisa masukin ID channel",
+      "status": "Proses"
+    },
+	{
+      "tanggal": "28-10-2024",
+      "nama_unit": "SDIA 12 Cikarang",
+      "keterangan": "Gabisa di buka",
+      "status": "Proses"
+    },
+	{
+      "tanggal": "28-10-2024",
+      "nama_unit": "SMPIA 16 Cikarang",
+      "keterangan": "Gabisa di buka",
+      "status": "Proses"
+    },
+	{
+      "tanggal": "28-10-2024",
+      "nama_unit": "SMAIA 12 Cikarang",
+      "keterangan": "Blm ada plugin IG & Tiktok",
+      "status": "Proses"
+    },
+	{
+      "tanggal": "28-10-2024",
+      "nama_unit": "SDIA 27 Cibinong",
+      "keterangan": "Tampilan landing page berantakan, pdahal klo di buka elementor nya aman",
+      "status": "Proses"
+    },
+	{
+      "tanggal": "28-10-2024",
+      "nama_unit": "SDIA 2 Pasar Minggu",
+      "keterangan": "Gabisa uploade Template elementor",
+      "status": "Proses"
+    },
+	{
+      "tanggal": "28-10-2024",
+      "nama_unit": "SDIA 71 Pangkal Pinang",
+      "keterangan": "Blm ada plugin IG & Tiktok sama tampilan landing page berantakan, pdahal klo di buka elementor nya aman",
+      "status": "Proses"
+    },
+	{
+      "tanggal": "28-10-2024",
+      "nama_unit": "TKIA 54 Pekanbaru",
+      "keterangan": "Tampilan landing page berantakan, pdahal klo di buka elementor nya aman",
+      "status": "Proses"
+    },
+	{
+      "tanggal": "28-10-2024",
+      "nama_unit": "TKIA 50 Bengkulu",
+      "keterangan": "Gabisa masuk ke elementor",
+      "status": "Proses"
+    },
+	{
+      "tanggal": "28-10-2024",
+      "nama_unit": "SMPIA 52 Bengkulu",
+      "keterangan": "Gabisa masuk ke elementor",
+      "status": "Proses"
+    },
+	{
+      "tanggal": "28-10-2024",
+      "nama_unit": "SMPIA 2 Pejaten",
+      "keterangan": "Gabisa login",
+      "status": "Proses"
     }
   ]
 }
