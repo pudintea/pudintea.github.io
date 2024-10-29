@@ -22,8 +22,8 @@
                               <thead>
                                   <tr>
                                       <th >Tanggal</th>
-                                      <th >Nama</th>
-                                      <th >Unit</th>
+                                      <th >Nama/Unit</th>
+                                      <th >Keterangan</th>
                                       <th class="text-center" width="10%">Status</th>
                                   </tr>
                               </thead>
@@ -50,9 +50,10 @@
                 ajax: 'res/perbaikan-website.json',
                 order: [[0, 'asc']],
                 columns: [
-                    { "data": "nama"},
-                    { "data": "unit" },
-                    { "data": "lomba"}
+                    { "data": "tanggal"},
+                    { "data": "nama_unit" },
+                    { "data": "keterangan"},
+                    { "data": "status"}
                 ]
             });
         });
