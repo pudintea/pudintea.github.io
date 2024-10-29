@@ -51,13 +51,19 @@
                 ajax: 'res/perbaikan-website.json',
                 order: [[0, 'asc']],
                 columns: [
-                    { "data": "tanggal"},
+                    { "data": "tanggal" },
                     { "data": "nama_unit" },
-                    { "data": "keterangan"},
-                    { "data": "status"}
+                    { "data": "keterangan" },
+                    { "data": "status" }
+                ],
+                columnDefs: [
+                    { 
+                        targets: 3,
+                        className: "text-center"
+                    }
                 ]
             });
         });
-    </script> 
+    </script>
 </body>
 </html>
