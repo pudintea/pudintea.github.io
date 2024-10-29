@@ -77,6 +77,12 @@
       "nama_unit": "SMPIA 2 Pejaten",
       "keterangan": "Gabisa login",
       "status": "Proses"
+    },
+	{
+      "tanggal": "29-10-2024",
+      "nama_unit": "SMAIA 24 boarding Cigombong",
+      "keterangan": "Plugins jetpek analitik gak aktif (hilang)",
+      "status": "Proses"
     }
   ]
 }
