@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peserta Lomba Milad ke 72 YPI Al Azhar</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-4 p-4 rounded" id="home">
+        <div class="row mt-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="mb-4">
+                            <a href="https://pudintea.github.io" title="Kembali" class="btn btn-danger btn-sm">Kembali</a>
+                        </div>
+                        <div class="table-responsive">
+                          <table class="table table-hover table-striped" id="datatables" width="100%" style="width:100%">
+                              <thead>
+                                  <tr>
+                                      <th >Tanggal</th>
+                                      <th >Nama</th>
+                                      <th >Unit</th>
+                                      <th class="text-center" width="10%">Status</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                              </tbody>
+                          </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4">
+                     <span> Powered By : &copy Saepudin Ilham <a href="https://www.pudin.my.id" target="_blank">(www.pudin.my.id)</a> </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="datatables/jquery.dataTables.min.js"></script>
+    <script src="datatables/dataTables.bootstrap4.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var table = $('#datatables').DataTable({
+                processing: true,
+                ajax: 'res/lomba-milad72.json',
+                order: [[0, 'asc']],
+                columns: [
+                    { "data": "nama"},
+                    { "data": "unit" },
+                    { "data": "lomba"}
+                ]
+            });
+        });
+    </script> 
+</body>
+</html>
