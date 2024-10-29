@@ -82,7 +82,13 @@
       "tanggal": "29-10-2024",
       "nama_unit": "SMAIA 24 boarding Cigombong",
       "keterangan": "Plugins jetpek analitik gak aktif (hilang)",
-      "status": "Proses"
+      "status": "Selesai"
+    },
+	{
+      "tanggal": "29-10-2024",
+      "nama_unit": "SDIA 17 Bintaro",
+      "keterangan": "Tidak Bisa login",
+      "status": "Selesai"
     }
   ]
 }
