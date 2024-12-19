@@ -1,0 +1,124 @@
+{
+	"data" : [ 
+		{
+			"nama_domain":"wakafalazhar.com",
+			"regis_date": "03-09-2019",
+			"due_date": "13-12-2026",
+			"status": "Aktif"
+		},
+		{
+			"nama_domain":"bag-itd.my.id",
+			"regis_date": "27-06-2024",
+			"due_date": "27-06-2027",
+			"status": "Aktif"
+		},
+		{
+			"nama_domain":"dirdikdasmen-ypia.or.id",
+			"regis_date": "13-10-2020",
+			"due_date": "12-10-2028",
+			"status": "Aktif"
+		},
+		{
+			"nama_domain":"smpialazhar28.sch.id",
+			"regis_date": "31-10-2023",
+			"due_date": "30-10-2028",
+			"status": "Aktif"
+		},
+		{
+			"nama_domain":"smaalazhar1.sch.id",
+			"regis_date": "22-01-2015",
+			"due_date": "26-01-2027",
+			"status": "Aktif"
+		},
+		{
+			"nama_domain":"alazhar.co.id",
+			"regis_date": "14-09-2024",
+			"due_date": "13-09-2029",
+			"status": "Aktif"
+		},
+		{
+			"nama_domain":"alazhar.site",
+			"regis_date": "14-09-2024",
+			"due_date": "14-09-2025",
+			"status": "Aktif"
+		},
+		{
+			"nama_domain":"sdialazhar27.sch.id",
+			"regis_date": "29-10-2024",
+			"due_date": "28-10-2029",
+			"status": "Aktif"
+		},
+		{
+			"nama_domain":"alazhar.space",
+			"regis_date": "14-09-2024",
+			"due_date": "14-09-2024",
+			"status": "Aktif"
+		},
+		{
+			"nama_domain":"al-azhar.or.id",
+			"regis_date": "24-07-2019",
+			"due_date": "31-10-2033",
+			"status": "Aktif"
+		},
+		{
+			"nama_domain":"smpialazhar37.sch.id",
+			"regis_date": "10-02-2017",
+			"due_date": "14-02-2026",
+			"status": "Aktif"
+		},
+		{
+			"nama_domain":"tkia54pku.sch.id",
+			"regis_date": "16-07-2021",
+			"due_date": "15-07-2026",
+			"status": "Aktif"
+		},
+		{
+			"nama_domain":"al-azhar.sch.id",
+			"regis_date": "20-07-2019",
+			"due_date": "30-07-2033",
+			"status": "Aktif"
+		},
+		{
+			"nama_domain":"smaialazhar2.sch.id",
+			"regis_date": "02-07-2018",
+			"due_date": "16-07-2027",
+			"status": "Aktif"
+		},
+		{
+			"nama_domain":"smaialazhar3.sch.id",
+			"regis_date": "14-06-2021",
+			"due_date": "13-06-2026",
+			"status": "Aktif"
+		},
+		{
+			"nama_domain":"salamalazhar.id",
+			"regis_date": "25-06-2024",
+			"due_date": "25-06-2031",
+			"status": "Aktif"
+		},
+		{
+			"nama_domain":"smpialazhar25.sch.id",
+			"regis_date": "29-05-2021",
+			"due_date": "28-05-2026",
+			"status": "Aktif"
+		},
+		{
+			"nama_domain":"al-azhar.id",
+			"regis_date": "29-07-2019",
+			"due_date": "19-08-2033",
+			"status": "Aktif"
+		},
+		{
+			"nama_domain":"smai-alazhar2.sch.id",
+			"regis_date": "27-07-2022",
+			"due_date": "26-07-2029",
+			"status": "Aktif"
+		},
+		{
+			"nama_domain":"sdia54pku.sch.id",
+			"regis_date": "20-06-2023",
+			"due_date": "19-06-2032",
+			"status": "Aktif"
+		}
+	]
+}
