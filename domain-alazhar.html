@@ -21,9 +21,10 @@
                             <table class="table table-hover table-striped" id="datatables" width="100%" style="width:100%">
                                 <thead>
                                     <tr>
-                                        <th >Nama</th>
-                                        <th >Unit</th>
-                                        <th class="text-center" width="10%">Lomba</th>
+                                        <th >Nama Domain</th>
+                                        <th >Tgl Regis</th>
+                                        <th >Tgl Bayar</th>
+                                        <th class="text-center" width="10%">Status</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -46,12 +47,13 @@
           $(document).ready(function() {
               var table = $('#datatables').DataTable({
                   processing: true,
-                  ajax: 'res/lomba-milad72.json',
+                  ajax: 'res/data_domain.json',
                   order: [[0, 'asc']],
                   columns: [
-                      { "data": "nama"},
-                      { "data": "unit" },
-                      { "data": "lomba"}
+                      { "data": "nama_domain"},
+                      { "data": "regis_date" },
+                      { "data": "due_date"},
+                      { "data": "status"}
                   ]
               });
           });
