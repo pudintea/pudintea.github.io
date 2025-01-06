@@ -156,25 +156,25 @@
 
           <div class="col-lg-6">
             
-            <form>
+            <form name="pdn-submit-to-google-sheet">
               <div class="form-group">
                 <label for="nama">Nama</label>
-                <input type="text" class="form-control" id="nama">
+                <input type="text" class="form-control" id="nama" name="nama">
               </div>
               <div class="form-group">
                 <label for="email">Email</label>
-                <input type="text" class="form-control" id="email">
+                <input type="text" class="form-control" id="email" name="email">
               </div>
               <div class="form-group">
                 <label for="phone">Phone Number</label>
-                <input type="text" class="form-control" id="phone">
+                <input type="text" class="form-control" id="phone" name="phone">
               </div>
               <div class="form-group">
                 <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
+                <textarea class="form-control" id="message" rows="3" name="message"></textarea>
               </div>
               <div class="form-group">
-                <button type="button" class="btn btn-primary">Send Message</button>
+                <button type="submit" class="btn btn-primary">Send Message</button>
               </div>
             </form>
 
@@ -182,8 +182,6 @@
         </div>
       </div>
     </section>
-
-
     <!-- footer -->
     <footer class="bg-dark text-white mt-5">
       <div class="container">
@@ -194,17 +192,21 @@
         </div>
       </div>
     </footer>
-
-
-
-
-
-
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzPIhOeLevTAEInqSJYejlSHrnXx_LEsW8XwFe3wYU3LB6Wpi6iOOZ_PCXZvOZ4peDw/exec';
+      const form = document.forms['pdn-submit-to-google-sheet'];
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
   </body>
 </html>
