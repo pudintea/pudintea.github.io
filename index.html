@@ -153,7 +153,7 @@
           </div>
 
           <div class="col-lg-6">
-            <div class="alert alert-warning alert-dismissible fade show mb-2 d-none" role="alert">
+            <div class="alert alert-warning alert-dismissible fade show mb-2 d-none my-alert" role="alert">
               <strong>Terima Kasih!</strong> Pesan anda sudah kami terima.
               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
@@ -206,9 +206,15 @@
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbzPIhOeLevTAEInqSJYejlSHrnXx_LEsW8XwFe3wYU3LB6Wpi6iOOZ_PCXZvOZ4peDw/exec';
       const form = document.forms['pdn-submit-to-google-sheet'];
-    
+      const btnKirim = document.querySelector('.btn-kirim');
+      const btnLoading = document.querySelector('.btn-loading');
+      const myAlert = document.querySelector('.my-alert');
       form.addEventListener('submit', e => {
         e.preventDefault()
+        //Ketika tombol submit di klik
+        //tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
           .then(response => console.log('Success!', response))
           .catch(error => console.error('Error!', error.message))
