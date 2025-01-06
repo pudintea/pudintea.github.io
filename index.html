@@ -216,7 +216,14 @@
         btnLoading.classList.toggle('d-none');
         btnKirim.classList.toggle('d-none');
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => console.log('Success!', response))
+          .then(response => {
+            // Kembalikan tombol loading dan kirim
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            //Tampilkan Laert
+            myAlert.classList.toggle('d-none');
+            console.log('Success!', response);
+            })
           .catch(error => console.error('Error!', error.message))
       })
     </script>
