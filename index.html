@@ -222,6 +222,8 @@
             btnKirim.classList.toggle('d-none');
             //Tampilkan Laert
             myAlert.classList.toggle('d-none');
+            // Reset Formnya
+            form.reset();
             console.log('Success!', response);
             })
           .catch(error => console.error('Error!', error.message))
