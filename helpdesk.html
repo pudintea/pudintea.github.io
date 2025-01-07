@@ -35,7 +35,7 @@
                 </div>
               </div>
             </div>
-            <form class="form" name="formPermohonan">
+            <form class="form" name="pdn-formPermohonan">
               <div class="row">
                 <div class="col">
                   <div class="mb-3">
@@ -128,5 +128,31 @@
       </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxG4nfOD92oI86wP1LkNTUh9mVBbUewwOeaLQt9c2V9dYgpqNgI27yw0TwrGQcGVoro/exec';
+      const form = document.forms['pdn-formPermohonan'];
+      const btnKirim = document.querySelector('.btn-kirim');
+      const btnLoading = document.querySelector('.btn-loading');
+      const myAlert = document.querySelector('.my-alert');
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        //Ketika tombol submit di klik
+        //tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            // Kembalikan tombol loading dan kirim
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            //Tampilkan Laert
+            myAlert.classList.toggle('d-none');
+            // Reset Formnya
+            form.reset();
+            console.log('Success!', response);
+            })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
   </body>
 </html>
