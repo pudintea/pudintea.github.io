@@ -25,75 +25,79 @@
     </nav>
     <section class="input-data mt-3" id="input-data">
       <div class="container bg-white p-5">
-        <div class="row">
-          <div class="col">
-            <div class="alert alert-warning alert-dismissible fade show my-alert d-none" role="alert">
-              <strong>Terima Kasih!</strong>, Permohonan kamu sudah terkirim.
-              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                <div class="alert alert-warning alert-dismissible fade show my-alert d-none" role="alert">
+                  <strong>Terima Kasih!</strong>, Permohonan kamu sudah terkirim.
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+              </div>
             </div>
+            <form class="form" name="formPermohonan">
+              <div class="row">
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="inputNama" class="form-label">Nama Lengkap</label>
+                    <input type="text" class="form-control" id="inputNama" name="nama" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" name="email" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="inputNohp" class="form-label">No HP</label>
+                    <input type="text" class="form-control" id="inputNohp" name="nohp" required>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="inputJenjang" class="form-label">Jenjang</label>
+                    <select class="form-control" id="inputJenjang" name="jenjang">
+                      <option value="TK">TK</option>
+                      <option value="SD">SD</option>
+                      <option value="SMP">SMP</option>
+                      <option value="SMA">SMA</option>
+                      <option value="Lainnya">Lainnya</option>
+                    </select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="inputUnit" class="form-label">Nama Unit</label>
+                    <input type="text" class="form-control" id="inputUnit" name="unit" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="inputKategori" class="form-label">Kategori</label>
+                      <select class="form-control" id="inputKategori" name="kategori">
+                        <option value="Website">Website</option>
+                        <option value="Email Resmi">Email Resmi</option>
+                        <option value="Aplikasi Slims">Aplikasi Slims</option>
+                      </select>
+                  </div>
+                </div>
+                <div class="col">
+                  <div>
+                    <label for="inputPermohonan" class="form-label">Permohonan</label>
+                    <textarea class="form-control" id="inputPermohonan" name="permohonan" rows="8" required></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col text-end">
+                  <button type="submit" class="btn btn-primary btn-kirim">Kirim Permohonan</button>
+                  <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                    <span role="status">Loading...</span>
+                  </button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
-        <form class="form" name="formPermohonan">
-          <div class="row">
-            <div class="col">
-              <div class="mb-3">
-                <label for="inputNama" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="inputNama" name="nama" required>
-              </div>
-              <div class="mb-3">
-                <label for="inputEmail" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail" name="email" required>
-              </div>
-              <div class="mb-3">
-                <label for="inputNohp" class="form-label">No HP</label>
-                <input type="text" class="form-control" id="inputNohp" name="nohp" required>
-              </div>
-            </div>
-            <div class="col">
-              <div class="mb-3">
-                <label for="inputJenjang" class="form-label">Jenjang</label>
-                <select class="form-control" id="inputJenjang" name="jenjang">
-                  <option value="TK">TK</option>
-                  <option value="SD">SD</option>
-                  <option value="SMP">SMP</option>
-                  <option value="SMA">SMA</option>
-                  <option value="Lainnya">Lainnya</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <label for="inputUnit" class="form-label">Nama Unit</label>
-                <input type="text" class="form-control" id="inputUnit" name="unit" required>
-              </div>
-              <div class="mb-3">
-                <label for="inputKategori" class="form-label">Kategori</label>
-                  <select class="form-control" id="inputKategori" name="kategori">
-                    <option value="Website">Website</option>
-                    <option value="Email Resmi">Email Resmi</option>
-                    <option value="Aplikasi Slims">Aplikasi Slims</option>
-                  </select>
-              </div>
-            </div>
-            <div class="col">
-              <div>
-                <label for="inputPermohonan" class="form-label">Permohonan</label>
-                <textarea class="form-control" id="inputPermohonan" name="permohonan" rows="8" required></textarea>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col text-end">
-              <button type="submit" class="btn btn-primary btn-kirim">Kirim Permohonan</button>
-              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
-                <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
-                <span role="status">Loading...</span>
-              </button>
-            </div>
-          </div>
-        </form>
       </div>
     </section>
     <section class="table-data mt-3 mb-5" id="table-data">
-      <div class="container bg-white">
+      <div class="container">
         <div class="card">
           <div class="card-body">
             <div class="row">
