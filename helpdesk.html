@@ -10,46 +10,55 @@
   <body class="bg-light">
     <section class="input-data mt-3" id="input-data">
       <div class="container bg-white p-5">
-      <div class="row">
-        <div class="col">
-          <div class="mb-3">
-            <label for="inputNama" class="form-label">Nama Lengkap</label>
-            <input type="text" class="form-control" id="inputNama" name="nama">
+        <form class="form" name="formPermohonan">
+          <div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label for="inputNama" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="inputNama" name="nama">
+              </div>
+              <div class="mb-3">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail" name="email">
+              </div>
+              <div class="mb-3">
+                <label for="inputNohp" class="form-label">No HP</label>
+                <input type="password" class="form-control" id="inputNohp" name="nohp">
+              </div>
+            </div>
+            <div class="col">
+              <div class="mb-3">
+                <label for="inputNamaPimpinan" class="form-label">Nama Pimpinan</label>
+                <input type="text" class="form-control" id="inputNamaPimpinan" name="namapimpinan">
+              </div>
+              <div class="mb-3">
+                <label for="inputUnit" class="form-label">Unit</label>
+                <input type="text" class="form-control" id="inputUnit" name="unit">
+              </div>
+              <div class="mb-3">
+                <label for="inputInventaris" class="form-label">Barang</label>
+                  <select class="form-control" id="inputInventaris" name="inventaris">
+                    <option value="Inventaris">Inventaris</option>
+                    <option value="Non Inventaris">Non Inventaris</option>
+                  </select>
+              </div>
+            </div>
+            <div class="col">
+              <div>
+                <label for="inputPermohonan" class="form-label">Permohonan</label>
+                <textarea class="form-control" id="inputPermohonan" name="permohonan" rows="4"></textarea>
+              </div>
+            </div>
           </div>
-          <div class="mb-3">
-            <label for="inputEmail" class="form-label">Email</label>
-            <input type="email" class="form-control" id="inputEmail" name="email">
+          <div class="row">
+            <div class="col">
+              <div class="text-right">
+                <button type="submit" class="btn btn-primary btn-kirim">Kirim Permohonan</button>
+              </div>
+            </div>
           </div>
-          <div class="mb-3">
-            <label for="inputNohp" class="form-label">No HP</label>
-            <input type="password" class="form-control" id="inputNohp" name="nohp">
-          </div>
-        </div>
-        <div class="col">
-          <div class="mb-3">
-            <label for="inputNamaPimpinan" class="form-label">Nama Pimpinan</label>
-            <input type="text" class="form-control" id="inputNamaPimpinan" name="namapimpinan">
-          </div>
-          <div class="mb-3">
-            <label for="inputUnit" class="form-label">Unit</label>
-            <input type="text" class="form-control" id="inputUnit" name="unit">
-          </div>
-          <div class="mb-3">
-            <label for="inputInventaris" class="form-label">Barang</label>
-              <select class="form-control" id="inputInventaris" name="inventaris">
-                <option value="Inventaris">Inventaris</option>
-                <option value="Non Inventaris">Non Inventaris</option>
-              </select>
-          </div>
-        </div>
-        <div class="col">
-          <div>
-            <label for="inputPermohonan" class="form-label">Permohonan</label>
-            <textarea class="form-control" id="inputPermohonan" name="permohonan" rows="4"></textarea>
-          </div>
-        </div>
+        </form>
       </div>
-    </div>
     </section>
     <section class="table-data mt-3" id="table-data">
       <div class="container bg-white p-2">
