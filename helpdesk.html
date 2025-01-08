@@ -128,6 +128,42 @@
     <script src="datatables/jquery.dataTables.min.js"></script>
     <script src="datatables/dataTables.bootstrap4.min.js"></script>
     <script>
+    var table = $('#pdn-datatables');
+      $(document).ready(function() {
+            table.DataTable({
+              processing: true,
+              ajax: 'https://script.google.com/macros/s/AKfycbxG4nfOD92oI86wP1LkNTUh9mVBbUewwOeaLQt9c2V9dYgpqNgI27yw0TwrGQcGVoro/exec?nocache=123456',
+              order: [[0, 'asc']],
+              columns: [
+                  // Kolom Nama + Timestamp, Unit, dan Jenjang
+                  {
+                      "data": "nama",
+                      "render": function(data, type, row) {
+                          return `
+                              <small>${row.timestamp}</small><br>
+                              <b>${row.nama}</b><br>
+                              <small>${row.jenjang}</small>,<small>${row.unit}</small>
+                          `;
+                      }
+                  },
+                  // Kolom Permohonan
+                  {
+                      "data": "permohonan",
+                      "className": "align-middle" // Tambah class di <td>
+                  },
+                  // Kolom Status
+                  {
+                      "data": "status",
+                      "className": "align-middle" // Tambah class di <td>
+                  }
+              ]
+          });
+      });
+      function reloadTable(){
+        table.DataTable().ajax.reload();
+      }
+    </script>
+    <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbxG4nfOD92oI86wP1LkNTUh9mVBbUewwOeaLQt9c2V9dYgpqNgI27yw0TwrGQcGVoro/exec';
       const form = document.forms['pdn-formPermohonan'];
       const btnKirim = document.querySelector('.btn-kirim');
@@ -146,6 +182,8 @@
             btnKirim.classList.toggle('d-none');
             //Tampilkan Laert
             myAlert.classList.toggle('d-none');
+            //Reload Tablenya
+            reloadTable()
             // Reset Formnya
             form.reset();
             console.log('Success!', response);
@@ -153,41 +191,5 @@
           .catch(error => console.error('Error!', error.message))
       })
     </script>
-    <script>
-    var table = $('#pdn-datatables');
-    $(document).ready(function() {
-          table.DataTable({
-            processing: true,
-            ajax: 'https://script.google.com/macros/s/AKfycbxG4nfOD92oI86wP1LkNTUh9mVBbUewwOeaLQt9c2V9dYgpqNgI27yw0TwrGQcGVoro/exec?nocache=123456',
-            order: [[0, 'asc']],
-            columns: [
-                // Kolom Nama + Timestamp, Unit, dan Jenjang
-                {
-                    "data": "nama",
-                    "render": function(data, type, row) {
-                        return `
-                            <small>${row.timestamp}</small><br>
-                            <b>${row.nama}</b><br>
-                            <small>${row.jenjang}</small>,<small>${row.unit}</small>
-                        `;
-                    }
-                },
-                // Kolom Permohonan
-                {
-                    "data": "permohonan",
-                    "className": "align-middle" // Tambah class di <td>
-                },
-                // Kolom Status
-                {
-                    "data": "status",
-                    "className": "align-middle" // Tambah class di <td>
-                }
-            ]
-        });
-    });
-    function reloadTable(){
-      table.DataTable().ajax.reload();
-    }
-  </script>
   </body>
 </html>
