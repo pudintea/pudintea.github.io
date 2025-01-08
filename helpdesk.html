@@ -105,10 +105,9 @@
             <div class="row">
               <div class="col">
                 <div class="table-responsive">
-                  <table class="table" width="100%" style="width:100%;">
+                  <table class="table" id="datatables" width="100%" style="width:100%;">
                     <thead>
                       <tr>
-                        <th scope="col" width="5%">#</th>
                         <th scope="col" width="20%">Info</th>
                         <th scope="col">Permohonan</th>
                         <th scope="col" width="8%" class="text-center">Status</th>
@@ -166,5 +165,19 @@
           .catch(error => console.error('Error!', error.message))
       })
     </script>
+    <script>
+          $(document).ready(function() {
+              var table = $('#datatables').DataTable({
+                  processing: true,
+                  ajax: 'https://script.google.com/macros/s/AKfycbxG4nfOD92oI86wP1LkNTUh9mVBbUewwOeaLQt9c2V9dYgpqNgI27yw0TwrGQcGVoro/exec',
+                  order: [[0, 'asc']],
+                  columns: [
+                      { "data": "nama"},
+                      { "data": "permohonan" },
+                      { "data": "status"}
+                  ]
+              });
+          });
+      </script>
   </body>
 </html>
