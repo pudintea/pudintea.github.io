@@ -105,7 +105,7 @@
             <div class="row">
               <div class="col">
                 <div class="table-responsive">
-                  <table class="table" id="datatables" width="100%" style="width:100%;">
+                  <table class="table" id="pdn-datatables" width="100%" style="width:100%;">
                     <thead>
                       <tr>
                         <th scope="col" width="20%">Info</th>
@@ -154,8 +154,9 @@
       })
     </script>
     <script>
+    var table = $('#pdn-datatables');
     $(document).ready(function() {
-        var table = $('#datatables').DataTable({
+          table.DataTable({
             processing: true,
             ajax: 'https://script.google.com/macros/s/AKfycbxG4nfOD92oI86wP1LkNTUh9mVBbUewwOeaLQt9c2V9dYgpqNgI27yw0TwrGQcGVoro/exec?nocache=123456',
             order: [[0, 'asc']],
@@ -184,6 +185,9 @@
             ]
         });
     });
+    function reloadTable(){
+      table.DataTable().ajax.reload();
+    }
   </script>
   </body>
 </html>
