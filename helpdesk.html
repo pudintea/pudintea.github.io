@@ -165,26 +165,21 @@
                     "data": "nama",
                     "render": function(data, type, row) {
                         return `
-                            <b>${row.nama}</b><br>
                             <small>${row.timestamp}</small><br>
-                            <small>${row.unit}</small><br>
-                            <small>${row.jenjang}</small>
+                            <b>${row.nama}</b><br>
+                            <small>${row.jenjang}</small>,<small>${row.unit}</small>
                         `;
                     }
                 },
-                // Kolom Permohonan dengan class align-middle
+                // Kolom Permohonan
                 {
                     "data": "permohonan",
-                    "render": function(data) {
-                        return `<div class="align-middle">${data}</div>`;
-                    }
+                    "className": "align-middle" // Tambah class di <td>
                 },
-                // Kolom Status dengan class align-middle
+                // Kolom Status
                 {
                     "data": "status",
-                    "render": function(data) {
-                        return `<div class="align-middle">${data}</div>`;
-                    }
+                    "className": "align-middle" // Tambah class di <td>
                 }
             ]
         });
