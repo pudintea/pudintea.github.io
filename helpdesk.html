@@ -154,18 +154,41 @@
       })
     </script>
     <script>
-          $(document).ready(function() {
-              var table = $('#datatables').DataTable({
-                  processing: true,
-                  ajax: 'https://script.google.com/macros/s/AKfycbxG4nfOD92oI86wP1LkNTUh9mVBbUewwOeaLQt9c2V9dYgpqNgI27yw0TwrGQcGVoro/exec',
-                  order: [[0, 'asc']],
-                  columns: [
-                      { "data": "nama"},
-                      { "data": "permohonan" },
-                      { "data": "status"}
-                  ]
-              });
-          });
-      </script>
+    $(document).ready(function() {
+        var table = $('#datatables').DataTable({
+            processing: true,
+            ajax: 'https://script.google.com/macros/s/AKfycbxG4nfOD92oI86wP1LkNTUh9mVBbUewwOeaLQt9c2V9dYgpqNgI27yw0TwrGQcGVoro/exec?nocache=123456',
+            order: [[0, 'asc']],
+            columns: [
+                // Kolom Nama + Timestamp, Unit, dan Jenjang
+                {
+                    "data": "nama",
+                    "render": function(data, type, row) {
+                        return `
+                            <b>${row.nama}</b><br>
+                            <small>${row.timestamp}</small><br>
+                            <small>${row.unit}</small><br>
+                            <small>${row.jenjang}</small>
+                        `;
+                    }
+                },
+                // Kolom Permohonan dengan class align-middle
+                {
+                    "data": "permohonan",
+                    "render": function(data) {
+                        return `<div class="align-middle">${data}</div>`;
+                    }
+                },
+                // Kolom Status dengan class align-middle
+                {
+                    "data": "status",
+                    "render": function(data) {
+                        return `<div class="align-middle">${data}</div>`;
+                    }
+                }
+            ]
+        });
+    });
+  </script>
   </body>
 </html>
