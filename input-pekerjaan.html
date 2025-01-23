@@ -6,8 +6,53 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <title>Pudin Saepudin | Input Pekerjaan</title>
   </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <body style="background-color: #eee">
+    <section class="input-data mt-3" id="input-data">
+      <div class="container">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                <div class="alert alert-warning alert-dismissible fade show my-alert d-none" role="alert">
+                  <strong>Terima Kasih!</strong>, Data pekerjaan kamu sudah tersimpan.
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+              </div>
+            </div>
+            <form class="form" name="pdn-formPermohonan">
+              <div class="row">
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="inputNama" class="form-label">Nama Lengkap</label>
+                    <input type="text" class="form-control" id="inputNama" name="nama" required>
+                    <input type="hidden" id="status" name="status" value="Antrian">
+                  </div>
+                  <div class="mb-3">
+                    <label for="inputTanggal" class="form-label">Tanggal</label>
+                    <input type="date" class="form-control" id="inputTanggal" name="tanggal" required>
+                  </div>
+                </div>
+                <div class="col">
+                  <div>
+                    <label for="inputPekerjaan" class="form-label">Pekerjaan</label>
+                    <textarea class="form-control" id="inputPekerjaan" name="pekerjaan" rows="6" required></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col text-end">
+                  <button type="submit" class="btn btn-primary btn-kirim">Kirim Permohonan</button>
+                  <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                    <span role="status">Loading...</span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="bootstrap/js/jquery-3.7.1.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
