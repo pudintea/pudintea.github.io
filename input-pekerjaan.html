@@ -21,7 +21,7 @@
                 </div>
               </div>
             </div>
-            <form class="form" name="pdn-formPermohonan">
+            <form class="form" name="pdn-formPekerjaan">
               <div class="row">
                 <div class="col-md-6 col-lg-6 col-xs-12 col-sm-12">
                   <div class="mb-3">
@@ -59,5 +59,31 @@
     </section>
     <script src="bootstrap/js/jquery-3.7.1.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const scriptURL = "";
+      const form = document.forms["pdn-formPekerjaan"];
+      const btnKirim = document.querySelector(".btn-kirim");
+      const btnLoading = document.querySelector(".btn-loading");
+      const myAlert = document.querySelector(".my-alert");
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        //Ketika tombol submit di klik
+        //tampilkan tombol loading, hilangkan tombol kirim
+        btnLoading.classList.toggle('d-none');
+        btnKirim.classList.toggle('d-none');
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            // Kembalikan tombol loading dan kirim
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            //Tampilkan Laert
+            myAlert.classList.toggle('d-none');
+            // Reset Formnya
+            form.reset();
+            console.log('Success!', response);
+            })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
   </body>
 </html>
