@@ -41,7 +41,8 @@
     <script src="datatables/dataTables.bootstrap4.min.js"></script>
     <script>
         $(document).ready(function() {
-            var table = $('#datatables').DataTable({
+            var table = $('#datatables');
+            table.DataTable({
                 processing: true,
                 ajax: 'res/provider.json',
                 order: [[1, 'asc']],
