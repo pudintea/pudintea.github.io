@@ -42,8 +42,9 @@
     <script src="datatables/jquery.dataTables.min.js"></script>
     <script src="datatables/dataTables.bootstrap4.min.js"></script>
     <script>
+        var table = $('#datatables')
         $(document).ready(function() {
-            var table = $('#datatables').DataTable({
+            table.DataTable({
                 processing: true,
                 ajax: 'res/data_sekolah.json',
                 order: [[1, 'asc']],
@@ -66,6 +67,10 @@
                 ]
             });
         });
+
+        function reloadTable(){
+            table.DataTable().ajax.reload();
+        }
     </script> 
 </body>
 </html>
