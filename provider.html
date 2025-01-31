@@ -40,8 +40,8 @@
     <script src="datatables/jquery.dataTables.min.js"></script>
     <script src="datatables/dataTables.bootstrap4.min.js"></script>
     <script>
+        var table = $('#datatables');
         $(document).ready(function() {
-            var table = $('#datatables');
             table.DataTable({
                 processing: true,
                 ajax: 'res/provider.json',
