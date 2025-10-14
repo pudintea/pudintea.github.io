@@ -28,14 +28,6 @@
       <div class="container">
         <div class="card">
           <div class="card-body">
-            <div class="row">
-              <div class="col">
-                <div class="alert alert-warning alert-dismissible fade show my-alert d-none" role="alert">
-                  <strong>Terima Kasih!</strong>, Permohonan kamu sudah terkirim.
-                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-              </div>
-            </div>
             <form class="form" name="pdn-formPermohonan">
               <div class="row">
                 <div class="col-md-4 col-lg-4 col-xs-12 col-sm-12">
@@ -114,7 +106,15 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <input type="hidden" id="editNoAgenda" name="no_agenda">
+              <input type="hidden" id="editIdSurat" name="id_surat">
+              <div class="mb-3">
+                <label for="editNoAgenda" class="form-label">No Agenda</label>
+                <input type="text" class="form-control" id="editNoAgenda" name="no_agenda" required>
+              </div>
+              <div class="mb-3">
+                <label for="editUnit" class="form-label">Unit</label>
+                <input type="text" class="form-control" id="editUnit" name="unit" required>
+              </div>
               <div class="mb-3">
                 <label for="editUnit" class="form-label">Unit</label>
                 <input type="text" class="form-control" id="editUnit" name="unit" required>
@@ -250,6 +250,7 @@
         var data = dt.row($(this).parents('tr')).data();
     
         // Isi form modal edit dengan data dari row
+        $('#editIdSurat').val(id_surat);
         $('#editNoAgenda').val(data.no_agenda);
         $('#editUnit').val(data.unit);
         $('#editStatus').val(data.status);
@@ -263,7 +264,7 @@
       // Submit form edit
       $('#formEdit').on('submit', function(e) {
         e.preventDefault();
-    
+        var id_surat = $('#editIdSurat').val();
         var no_agenda = $('#editNoAgenda').val();
         var unit = $('#editUnit').val();
         var status = $('#editStatus').val();
