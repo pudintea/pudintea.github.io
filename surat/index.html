@@ -91,6 +91,7 @@
                               <th class="text-center" >Unit</th>
                               <th >Hal</th>
                               <th class="text-center" width="10%">Status</th>
+                              <th class="text-center" width="14%">Action</th>
                           </tr>
                       </thead>
                       <tbody>
@@ -118,7 +119,17 @@
                     { data: "no_agenda", "class": "align-top text-center"},
                     { data: "unit", "class": "align-top text-center"},
                     { data: "hal" },
-                    { data: "status", "class": "align-top text-center"}
+                    { data: "status", "class": "align-top text-center"},
+                    {
+                      data: null,
+                      class: "text-center",
+                      orderable: false,
+                      render: function(data, type, row) {
+                        return `
+                          <button class="btn btn-sm btn-warning btn-edit" data-no_agenda="${row.id_surat}">Edit</button>
+                          <button class="btn btn-sm btn-danger btn-delete" data-no_agenda="${row.id_surat}">Hapus</button>
+                        `;
+                      }
                 ]
             });
         });
