@@ -157,6 +157,8 @@
             success: function(response) {
               alert('Data berhasil disimpan!');
               $('form[name="pdn-formPermohonan"]')[0].reset();
+              // Reload table ya
+              reloadTable();
             },
             error: function(xhr) {
               alert('Terjadi kesalahan: ' + xhr.status + ' - ' + xhr.responseText);
