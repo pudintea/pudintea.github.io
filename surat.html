@@ -21,10 +21,10 @@
                           <table class="table" id="datatables" width="100%" style="width:100%">
                               <thead>
                                   <tr>
-                                      <th class="text-center" width="8%">No Agenda</th>
-                                      <th >Unit</th>
-                                      <th >Hal</th>
-                                      <th >Status</th>
+                                      <th class="text-center" width="14%">No Agenda</th>
+                                      <th class="text-center" >Unit</th>
+                                      <th class="text-center" >Hal</th>
+                                      <th class="text-center" width="10%">Status</th>
                                   </tr>
                               </thead>
                               <tbody>
@@ -49,11 +49,13 @@
                 order: [[1, 'asc']],
                 columns: [
                     { "data": "no_agenda",
-                      "class": "align-top text-center"
+                        "class": "align-top text-center"
                     },
-                    { data: 'unit' },
-                    { data: 'hal' },
-                    { data: 'status' }
+                    { data: "unit" },
+                    { data: "hal" },
+                    { data: "status",
+                        "class": "align-top text-center"
+                    }
                 ]
             });
         });
