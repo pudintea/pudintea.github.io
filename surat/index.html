@@ -127,5 +127,44 @@
             table.DataTable().ajax.reload();
         }
     </script>
+    <script>
+      $(document).ready(function() {
+        $('form[name="pdn-formPermohonan"]').on('submit', function(e) {
+          e.preventDefault(); // cegah form submit biasa
+      
+          var $form = $(this);
+          var $btnSubmit = $form.find('.btn-kirim');
+          var $btnLoading = $form.find('.btn-loading');
+      
+          // Tampilkan loading, sembunyikan tombol submit
+          $btnSubmit.addClass('d-none');
+          $btnLoading.removeClass('d-none');
+      
+          // Ambil data form sebagai object
+          var formData = $form.serialize();
+      
+          $.ajax({
+            url: 'https://pdn-supabase-express.vercel.app/api/surat',  // Ganti dengan endpoint server
+            method: 'POST',
+            data: formData,
+            dataType: 'json',  // misal respon json
+            success: function(response) {
+              // contoh response handling
+              alert('Data berhasil disimpan!');
+              // Reset form jika perlu
+              $form[0].reset();
+            },
+            error: function(xhr, status, error) {
+              alert('Terjadi kesalahan: ' + error);
+            },
+            complete: function() {
+              // Kembalikan tombol submit dan sembunyikan loading
+              $btnSubmit.removeClass('d-none');
+              $btnLoading.addClass('d-none');
+            }
+          });
+        });
+      });
+      </script>
   </body>
 </html>
