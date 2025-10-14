@@ -142,27 +142,31 @@
       
           // Ambil data form sebagai object
           var formData = $form.serialize();
-      
+
           $.ajax({
-            url: 'https://pdn-supabase-express.vercel.app/api/surat',  // Ganti dengan endpoint server
+            url: 'https://pdn-supabase-express.vercel.app/api/surat',
             method: 'POST',
-            data: formData,
-            dataType: 'json',  // misal respon json
+            contentType: 'application/json',
+            data: JSON.stringify({
+              no_agenda: $('#inputNoAgenda').val(),
+              unit: $('#inputUnit').val(),
+              status: $('#inputStatus').val(),
+              hal: $('#inputHal').val()
+            }),
+            dataType: 'json',
             success: function(response) {
-              // contoh response handling
               alert('Data berhasil disimpan!');
-              // Reset form jika perlu
-              $form[0].reset();
+              $('form[name="pdn-formPermohonan"]')[0].reset();
             },
-            error: function(xhr, status, error) {
-              alert('Terjadi kesalahan: ' + error);
+            error: function(xhr) {
+              alert('Terjadi kesalahan: ' + xhr.status + ' - ' + xhr.responseText);
             },
             complete: function() {
-              // Kembalikan tombol submit dan sembunyikan loading
               $btnSubmit.removeClass('d-none');
               $btnLoading.addClass('d-none');
             }
           });
+          
         });
       });
       </script>
