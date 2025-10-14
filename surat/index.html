@@ -242,7 +242,7 @@
       $('#datatables').on('click', '.btn-edit', function() {
         var id_surat = $(this).data('id_surat');
     
-        // Ambil data baris sesuai no_agenda dari DataTable
+        // Ambil data baris sesuai dari DataTable
         var data = dt.row($(this).parents('tr')).data();
     
         // Isi form modal edit dengan data dari row
@@ -267,13 +267,13 @@
         var hal = $('#editHal').val();
     
         $.ajax({
-          url: `https://pdn-supabase-express.vercel.app/api/surat/${id_surat}`,  // misal pakai RESTful
+          url: `https://pdn-supabase-express.vercel.app/api/surat/${id_surat}`,
           method: 'PUT',
           contentType: 'application/json',
           data: JSON.stringify({ unit, status, hal }),
           success: function() {
             alert('Data berhasil diupdate');
-            $('#modalEdit').modal('hide');  // jika pakai bootstrap 4
+            $('#modalEdit').modal('hide');  // bootstrap 4
             // bootstrap 5 cara tutup:
             var modalEditEl = document.getElementById('modalEdit');
             var modalEdit = bootstrap.Modal.getInstance(modalEditEl);
