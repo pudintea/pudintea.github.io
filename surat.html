@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Agenda Persuratan</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container mt-4 p-4 rounded" id="home">
+        <div class="row mt-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="mb-4">
+                            <a href="https://pudintea.github.io" title="Kembali" class="btn btn-danger btn-sm">Kembali</a>
+                        </div>
+                        <div class="table-responsive">
+                          <table class="table" id="datatables" width="100%" style="width:100%">
+                              <thead>
+                                  <tr>
+                                      <th class="text-center" width="8%">No Agenda</th>
+                                      <th >Unit</th>
+                                      <th >Hal</th>
+                                      <th >Status</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                              </tbody>
+                          </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="datatables/jquery.dataTables.min.js"></script>
+    <script src="datatables/dataTables.bootstrap4.min.js"></script>
+    <script>
+        var table = $('#datatables');
+        $(document).ready(function() {
+            table.DataTable({
+                processing: true,
+                ajax: 'https://supabase-express-chi.vercel.app/api/surat',
+                order: [[1, 'asc']],
+                columns: [
+                    { "data": "no_agenda",
+                      "class": "align-top text-center"
+                    },
+                    { data: 'unit' },
+                    { data: 'hal' },
+                    { data: 'status' }
+                ]
+            });
+        });
+
+        function reloadTable(){
+            table.DataTable().ajax.reload();
+        }
+    </script> 
+</body>
+</html>
