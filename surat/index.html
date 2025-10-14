@@ -44,7 +44,7 @@
                     <input type="text" class="form-control" id="inputNoAgenda" name="no_agenda" required>
                   </div>
                   <div class="mb-3">
-                    <label for="inputUnit" class="form-label">Email</label>
+                    <label for="inputUnit" class="form-label">Unit</label>
                     <input type="text" class="form-control" id="inputUnit" name="unit" required>
                   </div>
                   <div class="mb-3">
@@ -108,12 +108,12 @@
     <script src="datatables/jquery.dataTables.min.js"></script>
     <script src="datatables/dataTables.bootstrap4.min.js"></script>
     <script>
-        var table = $('#datatables');
+        var table = $("#datatables");
         $(document).ready(function() {
             table.DataTable({
                 processing: true,
-                ajax: 'https://pdn-supabase-express.vercel.app/api/surat',
-                order: [[1, 'asc']],
+                ajax: "https://pdn-supabase-express.vercel.app/api/surat",
+                order: [[1, "asc"]],
                 columns: [
                     { data: "no_agenda", "class": "align-top text-center"},
                     { data: "unit", "class": "align-top text-center"},
