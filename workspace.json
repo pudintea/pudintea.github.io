@@ -1,0 +1,204 @@
+{
+	"data" : [ 
+			{
+			  "id": 1,
+			  "nama_sekolah": "SMA Islam Al Azhar 1",
+			  "domain": "smaalazhar1.sch.id",
+			  "jenjang": "SMA",
+			  "kampus": "Kebayoran Baru",
+			  "status": "Approve",
+			  "pengelola": "IT Al AZHAR",
+			  "detail": "https:\/\/www.whois.com\/whois\/smaalazhar1.sch.id"
+			},
+			{
+			  "id": 2,
+			  "nama_sekolah": "SMP Islam Al Azhar 1",
+			  "domain": "smpialazhar1.sch.id",
+			  "jenjang": "SMP",
+			  "kampus": "Kebayoran Baru",
+			  "status": "Approve",
+			  "pengelola": "SEKOLAH",
+			  "detail": "https:\/\/www.whois.com\/whois\/smpialazhar1.sch.id"
+			},
+			{
+			  "id": 3,
+			  "nama_sekolah": "SMA Islam Al Azhar 3",
+			  "domain": "smaialazhar3.sch.id",
+			  "jenjang": "SMA",
+			  "kampus": "Kebayoran Baru",
+			  "status": "Approve",
+			  "pengelola": "IT Al AZHAR",
+			  "detail": "https:\/\/www.whois.com\/whois\/smaialazhar3.sch.id"
+			},
+			{
+			  "id": 4,
+			  "nama_sekolah": "SMP Islam Al Azhar 25",
+			  "domain": "smpia25.al-azhar.sch.id",
+			  "jenjang": "SMP",
+			  "kampus": "Pamulang",
+			  "status": "Approve",
+			  "pengelola": "IT Al AZHAR",
+			  "detail": "https:\/\/www.whois.com\/whois\/al-azhar.sch.id"
+			},
+			{
+			  "id": 5,
+			  "nama_sekolah": "SD Islam Al azhar 27 ",
+			  "domain": "sdialazhar27.sch.id",
+			  "jenjang": "SD",
+			  "kampus": "Cibiidng",
+			  "status": "Approve",
+			  "pengelola": "IT Al AZHAR",
+			  "detail": "https:\/\/www.whois.com\/whois\/sdialazhar27.sch.id"
+			},
+			{
+			  "id": 6,
+			  "nama_sekolah": "SD Islam Al Azhar 36",
+			  "domain": "sdialazhar36.sch.id",
+			  "jenjang": "SD",
+			  "kampus": "Bandung",
+			  "status": "Approve",
+			  "pengelola": "IT Al AZHAR",
+			  "detail": "https:\/\/www.whois.com\/whois\/sdialazhar36.sch.id"
+			},
+			{
+			  "id": 7,
+			  "nama_sekolah": "SMA Islam Al Azhar 17",
+			  "domain": "smaialazhar17.sch.id",
+			  "jenjang": "SMA",
+			  "kampus": "Karawang",
+			  "status": "Approve",
+			  "pengelola": "IT Al AZHAR",
+			  "detail": "https:\/\/www.whois.com\/whois\/smaialazhar17.sch.id"
+			},
+			{
+			  "id": 8,
+			  "nama_sekolah": "SD Islam Al Azhar 41",
+			  "domain": "sdia41.al-azhar.sch.id",
+			  "jenjang": "SD",
+			  "kampus": "Karawang",
+			  "status": "Approve",
+			  "pengelola": "IT Al AZHAR",
+			  "detail": "https:\/\/www.whois.com\/whois\/al-azhar.sch.id"
+			},
+			{
+			  "id": 9,
+			  "nama_sekolah": "SMA Islam Al Azhar 2",
+			  "domain": "smaialazhar2.sch.id",
+			  "jenjang": "SMA",
+			  "kampus": "Pejaten",
+			  "status": "Approve",
+			  "pengelola": "IT Al AZHAR",
+			  "detail": "https:\/\/www.whois.com\/whois\/smaialazhar2.sch.id"
+			},
+			{
+			  "id": 10,
+			  "nama_sekolah": "SMP Islam Al Azhar 2",
+			  "domain": "smp-alazhar2.sch.id",
+			  "jenjang": "SMP",
+			  "kampus": "Pejaten",
+			  "status": "Approve",
+			  "pengelola": "IT Al AZHAR dan SEKOLAH",
+			  "detail": "https:\/\/www.whois.com\/whois\/smp-alazhar2.sch.id"
+			},
+			{
+			  "id": 11,
+			  "nama_sekolah": "SMP Islam Al Azhar 28",
+			  "domain": "smpialazhar28.sch.id",
+			  "jenjang": "SMP",
+			  "kampus": "Cibinong",
+			  "status": "Approve",
+			  "pengelola": "IT Al AZHAR",
+			  "detail": "https:\/\/www.whois.com\/whois\/smpialazhar28.sch.id"
+			},
+			{
+			  "id": 12,
+			  "nama_sekolah": "SMP Islam Al Azhar 37",
+			  "domain": "smpialazhar37.sch.id",
+			  "jenjang": "SMP",
+			  "kampus": "Pekanbaru",
+			  "status": "Approve",
+			  "pengelola": "IT Al AZHAR",
+			  "detail": "https:\/\/www.whois.com\/whois\/smpialazhar37.sch.id"
+			},
+			{
+			  "id": 13,
+			  "nama_sekolah": "SD Islam Al Azhar 54",
+			  "domain": "sdia54pku.sch.id",
+			  "jenjang": "SD",
+			  "kampus": "Pekanbaru",
+			  "status": "Approve",
+			  "pengelola": "IT Al AZHAR",
+			  "detail": "https:\/\/www.whois.com\/whois\/sdia54pku.sch.id"
+			},
+			{
+			  "id": 14,
+			  "nama_sekolah": "SD Islam Al Azhar 17",
+			  "domain": "sdialazhar17.sch.id",
+			  "jenjang": "SD",
+			  "kampus": "Bintaro",
+			  "status": "Approve",
+			  "pengelola": "SEKOLAH",
+			  "detail": "https:\/\/www.whois.com\/whois\/sdialazhar17.sch.id"
+			},
+			{
+			  "id": 15,
+			  "nama_sekolah": "SMP Islam Al Azhar 3",
+			  "domain": "smpialazhar3.sch.id",
+			  "jenjang": "SMP",
+			  "kampus": "Bintaro",
+			  "status": "Approve",
+			  "pengelola": "SEKOLAH",
+			  "detail": "https:\/\/www.whois.com\/whois\/smpialazhar3.sch.id"
+			},
+			{
+			  "id": 16,
+			  "nama_sekolah": "SMA Islam Al Azhar 22",
+			  "domain": "smaialazhar22.sch.id",
+			  "jenjang": "SMA",
+			  "kampus": "Cikarang",
+			  "status": "Approve",
+			  "pengelola": "SEKOLAH",
+			  "detail": "https:\/\/www.whois.com\/whois\/smaialazhar22.sch.id"
+			},
+			{
+			  "id": 17,
+			  "nama_sekolah": "SMP Islam Al Azhar 35",
+			  "domain": "smpia35.al-azhar.sch.id",
+			  "jenjang": "SMP",
+			  "kampus": "Karawang",
+			  "status": "Proses",
+			  "pengelola": "IT AL AZHAR",
+			  "detail": "https:\/\/www.whois.com\/whois\/al-azhar.sch.id"
+			},
+			{
+			  "id": 18,
+			  "nama_sekolah": "TK Islam Al Azhar 36",
+			  "domain": "tkia36.al-azhar.sch.id",
+			  "jenjang": "TK",
+			  "kampus": "Karawang",
+			  "status": "Proses",
+			  "pengelola": "IT AL AZHAR",
+			  "detail": "https:\/\/www.whois.com\/whois\/al-azhar.sch.id"
+			},
+			{
+			  "id": 19,
+			  "nama_sekolah": "SMP Islam Al Azhar 36",
+			  "domain": "al-azhar.sch.id",
+			  "jenjang": "SMP",
+			  "kampus": "Bandung",
+			  "status": "Approve",
+			  "pengelola": "SEKOLAH",
+			  "detail": "https:\/\/www.whois.com\/whois\/al-azhar.sch.id"
+			},
+			{
+			  "id": 20,
+			  "nama_sekolah": "SD Islam Al Azhar 71",
+			  "domain": "sdia71.al-azhar.sch.id",
+			  "jenjang": "SD",
+			  "kampus": "Pangkal Pinang",
+			  "status": "Proses",
+			  "pengelola": "IT AL AZHAR",
+			  "detail": "https:\/\/www.whois.com\/whois\/al-azhar.sch.id"
+			}
+	]
+}
