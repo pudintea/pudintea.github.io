@@ -7,6 +7,7 @@
       <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
       <link href="css/bootstrap.min.css" rel="stylesheet">
       <link href="datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+	  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
   </head>
   <body class="bg-light">
       <div class="container mt-4 p-4 rounded" id="home">
@@ -62,7 +63,7 @@
 							"data": "detail",
 							"render": function(data, type, row, meta){
 								if(type === 'display'){
-									return '<a href="'+data+'" target="_blank" class="btn btn-sm btn-primary">Lihat</a>';
+									return '<a href="'+data+'" target="_blank" class="btn btn-sm btn-primary"><i class="fas fa-info-circle"></i></a>';
 								}
 								return data;
 							}
