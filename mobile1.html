@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mobile UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Container Mobile -->
+  <div class="max-w-sm mx-auto min-h-screen bg-white shadow-lg relative">
+
+    <!-- Header -->
+    <header class="bg-blue-600 text-white p-4 text-center font-semibold text-lg">
+      Dashboard
+    </header>
+
+    <!-- Content -->
+    <main class="p-4 space-y-4 pb-20">
+      
+      <div class="bg-blue-100 p-4 rounded-xl shadow">
+        <h2 class="font-semibold text-lg">Card 1</h2>
+        <p class="text-sm text-gray-600">Contoh konten mobile.</p>
+      </div>
+
+      <div class="bg-green-100 p-4 rounded-xl shadow">
+        <h2 class="font-semibold text-lg">Card 2</h2>
+        <p class="text-sm text-gray-600">Tampilan sederhana dengan Tailwind.</p>
+      </div>
+
+      <div class="bg-yellow-100 p-4 rounded-xl shadow">
+        <h2 class="font-semibold text-lg">Card 3</h2>
+        <p class="text-sm text-gray-600">Bottom navigation di bawah.</p>
+      </div>
+
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="fixed bottom-0 left-0 right-0 max-w-sm mx-auto bg-white border-t shadow-inner">
+      <div class="flex justify-around py-2">
+
+        <button class="flex flex-col items-center text-blue-600">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 12l2-2m0 0l7-7 7 7m-9 2v8m0-8H5m14 0h-4" />
+          </svg>
+          <span class="text-xs">Home</span>
+        </button>
+
+        <button class="flex flex-col items-center text-gray-500">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="2"
+              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7H3v12a2 2 0 002 2z" />
+          </svg>
+          <span class="text-xs">Menu</span>
+        </button>
+
+        <button class="flex flex-col items-center text-gray-500">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="2"
+              d="M5.121 17.804A4 4 0 017 16h10a4 4 0 011.879 1.804M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+          </svg>
+          <span class="text-xs">Profile</span>
+        </button>
+
+      </div>
+    </nav>
+
+  </div>
+
+</body>
+</html>
