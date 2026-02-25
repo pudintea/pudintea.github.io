@@ -57,17 +57,20 @@
                       { "data": "kampus" },
                       { "data": "jenjang"},
                       { "data": "domain"},
-					            { "data": "pengelola"},
-          					  {
-            						"data": "detail",
-            						"render": function(data, type, row, meta){
-            							if(type === 'display'){
-            								return '<a href="'+data+'" target="_blank" class="btn btn-sm btn-primary">Lihat</a>';
-            							}
-            							return data;
-            						}
-            					},
-          					  { "data": "status"}
+					  { "data": "pengelola"},
+					  {
+							"data": "detail",
+							"render": function(data, type, row, meta){
+								if(type === 'display'){
+									return '<a href="'+data+'" target="_blank" class="btn btn-sm btn-primary">Lihat</a>';
+								}
+								return data;
+							}
+						},
+          				{ 
+							"data": "status",
+							"className": "text-center"
+						}
                   ]
               });
           });
