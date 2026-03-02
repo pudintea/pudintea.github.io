@@ -1,0 +1,38 @@
+{
+  "message": "success",
+  "data": {
+    "umum": [
+      {
+        "jumlah_sekolah": 231,
+        "jumlah_provinsi": 20,
+        "jumlah_murid": 64693,
+        "jumlah_pegawai": 5500,
+        "jumlah_prestasi": 2871
+      }
+    ],
+    "murid": [
+      {
+        "jumlah_murid_tk": 7447,
+        "jumlah_murid_sd": 35524,
+        "jumlah_murid_smp": 14898,
+        "jumlah_murid_sma": 6824,
+        "jumlah_murid_jml": 64643
+      }
+    ],
+    "sekolah": [
+      {
+        "jumlah_jenjang_tk": 67,
+        "jumlah_jenjang_sd": 73,
+        "jumlah_jenjang_smp": 61,
+        "jumlah_jenjang_sma": 30,
+        "jumlah_sekolah": 231
+      }
+    ],
+    "status_sekolah": [
+      {
+        "cabang": 61,
+        "kerjasama": 170
+      }
+    ]
+  }
+}
