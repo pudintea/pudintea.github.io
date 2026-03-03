@@ -7,6 +7,7 @@
 			"id": 1,
 			"nama": "Pudin Saepudin",
 			"email": "pudin1@email.id",
+			"img": "https://pudintea.github.io/img/profile-pudin-1.png",
 			"telpon": "6285221389555"
 		}
     ],
@@ -15,12 +16,14 @@
 			"id": 1,
 			"nama": "Pudin Saepudin",
 			"email": "pudin1@email.id",
+			"img": "https://pudintea.github.io/img/profile-pudin-1.png",
 			"telpon": "6285221389555"
 		},
 		{
 			"id": 2,
 			"nama": "Najzmi Ilham",
 			"email": "pudin2@email.id",
+			"img": "https://pudintea.github.io/img/profile-pudin-1.png",
 			"telpon": "6281381729540"
 		}
     ],
