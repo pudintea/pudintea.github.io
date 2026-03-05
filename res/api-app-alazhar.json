@@ -57,6 +57,50 @@
 			"cabang": 61,
 			"kerjasama": 170
 		}
-    ]
+    ],
+	"berita": [
+		{
+			"id": 7991,
+			"title": "Pembinaan Pegawai Pusdiklat Anyer oleh Pengurus YPI Al Azhar Perkuat Pelayanan Prima dan Nilai Ke-Al Azharan",
+			"date": "February 25, 2026",
+			"excerpt": "Pengurus YPI Al Azhar melaksanakan kegiatan pembinaan kepada para pegawai Pusat Pendidikan dan Pelatihan (Pusdiklat) YPI Al Azhar pada 30 – 31 Januari 2026 yang bertempat di Pusdiklat Anyer, Banten. Kegiatan ini diikuti oleh kurang lebih 30 peserta yang terdiri dari Tim Mentoring Building Team, petugas kebersihan, tim masak, serta tim keamanan. Kegiatan pembinaan ini ...",
+			"image": "https://pudintea.github.io/img/berita/2026/2026-02-nyer.jpg"
+		},
+		{
+			"id": 7978,
+			"title": "Sportivitas dan Semangat Silaturahmi Warnai Turnamen Olahraga dalam Milad ke-74 YPI Al Azhar",
+			"date": "February 25, 2026",
+			"excerpt": "Dalam rangka memeriahkan Milad ke-74 YPI Al Azhar, pegawai dari kampus sekolah Al Azhar se-Jabodetabek, Karawang, dan Bandung berkumpul dalam ajang turnamen olahraga. Bukan sekedar kompetisi, agenda tahunan ini diikuti peserta dengan menjunjung tinggi sportifitas dan silaturrahmi. Sebuah kegiatan yang mampu mempererat ukhuwah, membangun solidaritas lintas unit, sekaligus meneguhkan budaya hidup sehat di lingkungan kerja ...",
+			"image": "https://pudintea.github.io/img/berita/2026/2026-02-milad.jpg"
+		},
+		{
+			"id": 7923,
+			"title": "Ukir Prestasi, Wujudkan Generasi Beradab Melalui OSA Tahun 2026",
+			"date": "January 31, 2026",
+			"excerpt": "Mengusung semangat ‘Mengukir Prestasi, Mewujudkan Generasi Beradab’ Direktorat Dikdasmen YPI Al Azhar melaksanakan Olimpiade Sains Al Azhar (OSA) ke-18 tahun 2026 untuk jenjang SD, SMP, dan SMA. OSA tahun ini diikuti 2669 peserta dengan rincian jenjang SD diikuti 1076 peserta dari empat mata lomba, jenjang SMP 765 peserta dari tiga mata lomba, dan jenjang SMA ...",
+			"image": "https://pudintea.github.io/img/berita/2026/2026-01-OSA.jpg"
+		},
+		{
+			"id": 7913,
+			"title": "Studi Banding Yayasan Insan Pelita Pratama Indonesia",
+			"date": "January 31, 2026",
+			"excerpt": "Yayasan Pesantren Islam (YPI) Al Azhar melalui Sekretariat kembali menerima kunjungan dari Yayasan Insan Pelita Pratama Indonesia. Adapun tujuannya selain bersilaturahmi juga ingin menambah wawasan tentang tata kelola dalam pengelolaan YPI Al Azhar. Semua peserta terlihat begitu antusiasnya dalam pengelelolaan YPI Al Azhar yang dapat digunakan oleh Yayasan Insan Pelita Pratama Indonesia. Harapan dari YPI ...",
+			"image": "https://pudintea.github.io/img/berita/2026/2026-02-insan-pelita.jpg"
+		},
+		{
+			"id": 7900,
+			"title": "YPI Al Azhar Jawa Timur Gelar Giat Bina Satpam",
+			"date": "January 20, 2026",
+			"excerpt": "Yayasan Pesantren Islam (YPI) Al Azhar melalui Bagian Tata Usaha sukses selenggarakan pembinaan Satpam YPI Al Azhar Cabang Jawa Timur. Kegiatan yang berlangsung pada hari Sabtu 10 Januari 2026 dan bertempat di Kota Malang, Jawa Timur ini diikuti oleh 30 anggota satpam yang bertugas di lingkungan YPI Al Azhar Cabang Jawa Timur. Kegiatan dibuka secara ...",
+			"image": "https://pudintea.github.io/img/berita/2026/2026-01-pembinaan-satpam.jpg"
+		},
+		{
+			"id": 7886,
+			"title": "YPI Al Azhar Selenggarakan Pembinaan Awal Pegawai (PAP) ke-29 dan ke-30",
+			"date": "January 2, 2026",
+			"excerpt": "“Meningkatkan Kolaborasi untuk Kemajuan Lembaga dan Berdampak” Yayasan Pesantren Islam (YPI) Al Azhar menyelenggarakan Pembinaan Awal Pegawai (PAP) Guru, Tenaga Usaha (TU), dan Karyawan ke-29 dan ke-30 dengan mengusung tema “Meningkatkan Kolaborasi untuk Kemajuan Lembaga dan Berdampak”. Kegiatan ini merupakan bagian dari proses pembinaan awal bagi pegawai baru guna menanamkan nilai-nilai dasar, semangat kolaborasi, serta ...",
+			"image": "https://pudintea.github.io/img/berita/2026/2026-01-PAP.jpg"
+		}
+	]
   }
 }
