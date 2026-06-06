@@ -199,6 +199,16 @@
 			  "status": "Approve",
 			  "pengelola": "IT AL AZHAR",
 			  "detail": "https:\/\/www.whois.com\/whois\/al-azhar.sch.id"
+			},
+			{
+			  "id": 21,
+			  "nama_sekolah": "SD Islam Al Azhar 1",
+			  "domain": "sdialazhar01.sch.id",
+			  "jenjang": "SD",
+			  "kampus": "Kebayoran Baru",
+			  "status": "Approve",
+			  "pengelola": "Sekolah",
+			  "detail": "https:\/\/www.whois.com\/whois\/sdialazhar01.sch.id"
 			}
 	]
 }
