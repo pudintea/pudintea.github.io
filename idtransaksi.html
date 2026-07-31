@@ -54,6 +54,7 @@
 <div class="id-box">
     <p id="idTransaksi"></p>
     <button onclick="copyId()">📋 Copy</button>
+    <button onclick="generateNewId()">🔄 Generate Baru</button>
 </div>
 
 <p id="status"></p>
@@ -79,15 +80,28 @@ function generateTransactionId() {
     );
 }
 
-const transactionId = generateTransactionId();
-document.getElementById("idTransaksi").textContent = transactionId;
+let transactionId = "";
+function generateNewId() {
+    transactionId = generateTransactionId();
+    document.getElementById("idTransaksi").textContent = transactionId;
+
+    const status = document.getElementById("status");
+    status.textContent = "✨ ID transaksi baru berhasil dibuat!";
+
+    setTimeout(() => {
+        status.textContent = "";
+    }, 2000);
+}
+
+// Generate pertama kali saat halaman dibuka
+generateNewId();
 
 async function copyId() {
     try {
         await navigator.clipboard.writeText(transactionId);
 
         const status = document.getElementById("status");
-        status.textContent = "✅ ID berhasil disalin!";
+        status.textContent = "📋 ID berhasil disalin!";
 
         setTimeout(() => {
             status.textContent = "";
