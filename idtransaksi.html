@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PUDIN | ID Transaksi</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        .id-box {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background: #f8f8f8;
+        }
+
+        #idTransaksi {
+            font-family: Consolas, monospace;
+            font-size: 15px;
+            margin: 0;
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            background: #007bff;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        #status {
+            color: green;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>ID Transaksi</h2>
+
+<div class="id-box">
+    <p id="idTransaksi"></p>
+    <button onclick="copyId()">📋 Copy</button>
+</div>
+
+<p id="status"></p>
+
+<p>By Pudin Saepudin</p>
+
+<script>
+function generateTransactionId() {
+    const data = new Uint8Array(16);
+    crypto.getRandomValues(data);
+
+    data[6] = (data[6] & 0x0f) | 0x40;
+    data[8] = (data[8] & 0x3f) | 0x80;
+
+    const hex = [...data].map(b => b.toString(16).padStart(2, "0"));
+
+    return (
+        hex[0] + hex[1] + hex[2] + hex[3] + "-" +
+        hex[4] + hex[5] + "-" +
+        hex[6] + hex[7] + "-" +
+        hex[8] + hex[9] + "-" +
+        hex[10] + hex[11] + hex[12] + hex[13] + hex[14] + hex[15]
+    );
+}
+
+const transactionId = generateTransactionId();
+document.getElementById("idTransaksi").textContent = transactionId;
+
+async function copyId() {
+    try {
+        await navigator.clipboard.writeText(transactionId);
+
+        const status = document.getElementById("status");
+        status.textContent = "✅ ID berhasil disalin!";
+
+        setTimeout(() => {
+            status.textContent = "";
+        }, 2000);
+
+    } catch (err) {
+        alert("Gagal menyalin ID.");
+    }
+}
+</script>
+
+</body>
+</html>
