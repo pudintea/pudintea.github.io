@@ -84,13 +84,6 @@ let transactionId = "";
 function generateNewId() {
     transactionId = generateTransactionId();
     document.getElementById("idTransaksi").textContent = transactionId;
-
-    const status = document.getElementById("status");
-    status.textContent = "✨ ID transaksi baru berhasil dibuat!";
-
-    setTimeout(() => {
-        status.textContent = "";
-    }, 2000);
 }
 
 // Generate pertama kali saat halaman dibuka
