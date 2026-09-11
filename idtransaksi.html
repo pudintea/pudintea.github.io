@@ -46,6 +46,32 @@
             color: green;
             margin-top: 10px;
         }
+        .container-kode {
+            text-align: center;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        #kode {
+            font-size: 36px;
+            font-weight: bold;
+            letter-spacing: 6px;
+            margin: 20px 0;
+            color: #222;
+        }
+        .buttonKode {
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            background: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        .buttonKode:hover {
+            background: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -59,6 +85,12 @@
 </div>
 
 <p id="status"></p>
+
+<div class="container-kode">
+    <h2>Kode Acak</h2>
+    <div id="kode">0000000</div>
+    <button class="buttonKode" onclick="refreshKode()">Refresh Kode</button>
+</div>
 
 <p>By Pudin Saepudin</p>
 
@@ -105,6 +137,17 @@ async function copyId() {
         alert("Gagal menyalin ID.");
     }
 }
+
+function generateKode() {
+    return Math.floor(1000000 + Math.random() * 9000000);
+}
+
+function refreshKode() {
+    document.getElementById("kode").textContent = generateKode();
+}
+
+// Generate kode pertama saat halaman dibuka
+refreshKode();
 </script>
 
 </body>
