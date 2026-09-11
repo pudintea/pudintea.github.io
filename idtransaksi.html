@@ -3,520 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-
+	<link rel="stylesheet" href="css/idtransaksi.css">
     <title>PUDIN | ID Transaksi</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --primary: #6366f1;
-            --primary-dark: #4f46e5;
-            --secondary: #8b5cf6;
-            --success: #10b981;
-            --danger: #ef4444;
-            --text: #1e293b;
-            --muted: #64748b;
-            --card: rgba(255, 255, 255, 0.88);
-            --border: rgba(255, 255, 255, 0.5);
-        }
-
-        body {
-            min-height: 100vh;
-            font-family:
-                Inter,
-                "Segoe UI",
-                Roboto,
-                Arial,
-                sans-serif;
-
-            color: var(--text);
-
-            background:
-                radial-gradient(
-                    circle at 10% 20%,
-                    rgba(99, 102, 241, 0.25),
-                    transparent 30%
-                ),
-                radial-gradient(
-                    circle at 90% 80%,
-                    rgba(139, 92, 246, 0.25),
-                    transparent 30%
-                ),
-                linear-gradient(
-                    135deg,
-                    #eef2ff 0%,
-                    #f8fafc 50%,
-                    #f5f3ff 100%
-                );
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            padding: 30px 15px;
-
-            overflow-x: hidden;
-        }
-
-        /* Background decoration */
-        body::before,
-        body::after {
-            content: "";
-            position: fixed;
-            width: 250px;
-            height: 250px;
-            border-radius: 50%;
-            filter: blur(70px);
-            z-index: -1;
-        }
-
-        body::before {
-            background: rgba(99, 102, 241, 0.25);
-            top: -80px;
-            left: -80px;
-        }
-
-        body::after {
-            background: rgba(168, 85, 247, 0.2);
-            right: -80px;
-            bottom: -80px;
-        }
-
-        .app {
-            width: 100%;
-            max-width: 760px;
-        }
-
-        /* Header */
-        .header {
-            text-align: center;
-            margin-bottom: 25px;
-            animation: fadeDown 0.7s ease;
-        }
-
-        .logo {
-            width: 65px;
-            height: 65px;
-            margin: 0 auto 15px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            border-radius: 20px;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    var(--primary),
-                    var(--secondary)
-                );
-
-            color: white;
-            font-size: 27px;
-            font-weight: 800;
-
-            box-shadow:
-                0 15px 35px rgba(99, 102, 241, 0.3);
-        }
-
-        .header h1 {
-            font-size: clamp(28px, 5vw, 40px);
-            font-weight: 800;
-            letter-spacing: -1px;
-        }
-
-        .header p {
-            color: var(--muted);
-            margin-top: 7px;
-            font-size: 15px;
-        }
-
-        /* Card */
-        .card {
-            position: relative;
-
-            background: var(--card);
-            backdrop-filter: blur(18px);
-            -webkit-backdrop-filter: blur(18px);
-
-            border: 1px solid var(--border);
-            border-radius: 24px;
-
-            padding: 28px;
-
-            box-shadow:
-                0 25px 60px rgba(15, 23, 42, 0.10),
-                0 5px 15px rgba(15, 23, 42, 0.05);
-
-            margin-bottom: 20px;
-
-            animation: fadeUp 0.7s ease;
-        }
-
-        .card-header {
-            display: flex;
-            align-items: center;
-            gap: 13px;
-            margin-bottom: 22px;
-        }
-
-        .icon {
-            width: 45px;
-            height: 45px;
-
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            border-radius: 14px;
-
-            background: #eef2ff;
-            color: var(--primary);
-
-            font-size: 21px;
-        }
-
-        .card-title h2 {
-            font-size: 19px;
-        }
-
-        .card-title span {
-            display: block;
-            color: var(--muted);
-            font-size: 13px;
-            margin-top: 3px;
-        }
-
-        /* Transaction ID */
-        .transaction-box {
-            background: #f8fafc;
-            border: 1px solid #e2e8f0;
-
-            border-radius: 16px;
-
-            padding: 16px;
-
-            display: flex;
-            align-items: center;
-            gap: 12px;
-
-            margin-bottom: 14px;
-        }
-
-        #idTransaksi {
-            flex: 1;
-
-            min-width: 0;
-
-            font-family: "SFMono-Regular", Consolas, monospace;
-
-            font-size: 14px;
-            font-weight: 600;
-
-            color: #334155;
-
-            word-break: break-all;
-        }
-
-        /* Buttons */
-        .buttons {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-        }
-
-        button {
-            border: none;
-            cursor: pointer;
-
-            font-family: inherit;
-            font-weight: 600;
-
-            transition:
-                transform 0.2s ease,
-                box-shadow 0.2s ease,
-                background 0.2s ease;
-
-            user-select: none;
-        }
-
-        button:active {
-            transform: scale(0.97);
-        }
-
-        .btn {
-            min-height: 45px;
-
-            border-radius: 12px;
-
-            padding: 10px 15px;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 8px;
-
-            font-size: 14px;
-        }
-
-        .btn-primary {
-            background:
-                linear-gradient(
-                    135deg,
-                    var(--primary),
-                    var(--secondary)
-                );
-
-            color: white;
-
-            box-shadow:
-                0 8px 20px rgba(99, 102, 241, 0.25);
-        }
-
-        .btn-primary:hover {
-            box-shadow:
-                0 12px 28px rgba(99, 102, 241, 0.35);
-
-            transform: translateY(-2px);
-        }
-
-        .btn-light {
-            background: white;
-            color: #475569;
-
-            border: 1px solid #e2e8f0;
-        }
-
-        .btn-light:hover {
-            background: #f8fafc;
-            transform: translateY(-2px);
-        }
-
-        /* Status */
-        #status {
-            min-height: 20px;
-
-            text-align: center;
-
-            font-size: 13px;
-            font-weight: 600;
-
-            color: var(--success);
-
-            transition: 0.3s;
-        }
-
-        /* Code */
-        .code-wrapper {
-            text-align: center;
-        }
-
-        .code-display {
-            position: relative;
-
-            padding: 25px 15px;
-
-            margin: 10px 0 18px;
-
-            border-radius: 18px;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    #eef2ff,
-                    #f5f3ff
-                );
-
-            border: 1px solid #e0e7ff;
-
-            overflow: hidden;
-        }
-
-        .code-display::before {
-            content: "";
-
-            position: absolute;
-
-            width: 150px;
-            height: 150px;
-
-            border-radius: 50%;
-
-            background: rgba(99, 102, 241, 0.12);
-
-            top: -90px;
-            right: -50px;
-        }
-
-        #kode {
-            position: relative;
-
-            font-family:
-                "SFMono-Regular",
-                Consolas,
-                monospace;
-
-            font-size: clamp(35px, 9vw, 55px);
-
-            font-weight: 800;
-
-            letter-spacing: clamp(4px, 1.5vw, 10px);
-
-            color: #312e81;
-
-            text-shadow:
-                0 3px 10px rgba(79, 70, 229, 0.15);
-
-            transition:
-                transform 0.3s ease,
-                opacity 0.3s ease;
-        }
-
-        .code-label {
-            color: var(--muted);
-            font-size: 13px;
-        }
-
-        .refresh-btn {
-            width: 100%;
-
-            min-height: 50px;
-
-            border-radius: 13px;
-
-            background:
-                linear-gradient(
-                    135deg,
-                    var(--primary),
-                    var(--secondary)
-                );
-
-            color: white;
-
-            font-size: 15px;
-
-            box-shadow:
-                0 10px 25px rgba(99, 102, 241, 0.25);
-        }
-
-        .refresh-btn:hover {
-            transform: translateY(-2px);
-
-            box-shadow:
-                0 14px 30px rgba(99, 102, 241, 0.35);
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-
-            color: #94a3b8;
-
-            font-size: 13px;
-
-            margin-top: 25px;
-        }
-
-        footer strong {
-            color: #64748b;
-        }
-
-        /* Animations */
-        @keyframes fadeUp {
-            from {
-                opacity: 0;
-                transform: translateY(25px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes pop {
-            0% {
-                transform: scale(1);
-            }
-
-            50% {
-                transform: scale(1.06);
-            }
-
-            100% {
-                transform: scale(1);
-            }
-        }
-
-        .pop {
-            animation: pop 0.35s ease;
-        }
-
-        /* Mobile */
-        @media (max-width: 600px) {
-            body {
-                padding: 20px 12px;
-                align-items: flex-start;
-            }
-
-            .app {
-                margin-top: 15px;
-            }
-
-            .card {
-                padding: 20px;
-                border-radius: 20px;
-            }
-
-            .transaction-box {
-                flex-direction: column;
-                align-items: stretch;
-            }
-
-            #idTransaksi {
-                text-align: center;
-            }
-
-            .buttons {
-                grid-template-columns: 1fr;
-            }
-
-            .header {
-                margin-bottom: 20px;
-            }
-
-            .logo {
-                width: 58px;
-                height: 58px;
-            }
-        }
-    </style>
 </head>
 
 <body>
-
 <div class="app">
-
     <!-- HEADER -->
     <header class="header">
         <div class="logo">P</div>
@@ -527,7 +20,14 @@
             Generator ID Transaksi & Kode Acak
         </p>
     </header>
+	<section>
+	<!-- Toast Notification -->
+		<div id="status" class="toast">
+			<span id="statusIcon">✓</span>
+			<span id="statusText"></span>
+		</div>
 
+    </section>
 
     <!-- TRANSACTION CARD -->
     <section class="card">
@@ -579,57 +79,75 @@
 
         </div>
 
-        <p id="status"></p>
+        <!-- Toast Notification -->
+		<div id="status" class="toast">
+			<span id="statusIcon">✓</span>
+			<span id="statusText"></span>
+		</div>
 
     </section>
 
 
     <!-- RANDOM CODE CARD -->
-    <section class="card">
+	<section class="card">
 
-        <div class="card-header">
+		<div class="card-header">
 
-            <div class="icon">
-                🎲
-            </div>
+			<div class="icon">
+				🎲
+			</div>
 
-            <div class="card-title">
-                <h2>Kode Acak</h2>
+			<div class="card-title">
+				<h2>Kode Acak</h2>
 
-                <span>
-                    Generate angka 7 digit secara otomatis
-                </span>
-            </div>
+				<span>
+					Generate angka 7 digit secara otomatis
+				</span>
+			</div>
 
-        </div>
-
-
-        <div class="code-wrapper">
-
-            <div class="code-display">
-
-                <div class="code-label">
-                    KODE ANDA
-                </div>
-
-                <div id="kode">
-                    0000000
-                </div>
-
-            </div>
+		</div>
 
 
-            <button
-                class="refresh-btn"
-                onclick="refreshKode()"
-            >
-                ✨ Generate Kode Baru
-            </button>
+		<div class="code-wrapper">
 
-        </div>
+			<div class="code-display">
 
-    </section>
+				<div class="code-label">
+					KODE ANDA
+				</div>
 
+				<div id="kode">
+					0000000
+				</div>
+
+			</div>
+
+
+			<!-- BUTTON KODE -->
+			<div class="buttons">
+
+				<button
+					class="btn btn-light"
+					onclick="copyKode()"
+					id="copyKodeButton"
+				>
+					📋
+					<span>Copy Kode</span>
+				</button>
+
+				<button
+					class="btn btn-primary"
+					onclick="refreshKode()"
+				>
+					🔄
+					<span>Generate Baru</span>
+				</button>
+
+			</div>
+
+		</div>
+
+	</section>
 
     <!-- FOOTER -->
     <footer>
@@ -637,191 +155,6 @@
     </footer>
 
 </div>
-
-
-<script>
-
-/* =========================================================
-   TRANSACTION ID
-========================================================= */
-
-function generateTransactionId() {
-
-    const data = new Uint8Array(16);
-
-    crypto.getRandomValues(data);
-
-    // UUID v4
-    data[6] = (data[6] & 0x0f) | 0x40;
-    data[8] = (data[8] & 0x3f) | 0x80;
-
-    const hex = [...data].map(
-        byte => byte.toString(16).padStart(2, "0")
-    );
-
-    return (
-        hex[0] + hex[1] + hex[2] + hex[3] + "-" +
-        hex[4] + hex[5] + "-" +
-        hex[6] + hex[7] + "-" +
-        hex[8] + hex[9] + "-" +
-        hex[10] + hex[11] +
-        hex[12] + hex[13] +
-        hex[14] + hex[15]
-    );
-}
-
-
-let transactionId = "";
-
-
-/* Generate ID baru */
-function generateNewId() {
-
-    transactionId = generateTransactionId();
-
-    const element =
-        document.getElementById("idTransaksi");
-
-    element.textContent = transactionId;
-
-    element.classList.remove("pop");
-
-    // Trigger animation
-    void element.offsetWidth;
-
-    element.classList.add("pop");
-
-    showStatus("✨ ID transaksi baru berhasil dibuat!");
-}
-
-
-/* =========================================================
-   COPY ID
-========================================================= */
-
-async function copyId() {
-
-    if (!transactionId) {
-        showStatus(
-            "⚠️ ID transaksi belum tersedia."
-        );
-
-        return;
-    }
-
-    try {
-
-        await navigator.clipboard.writeText(
-            transactionId
-        );
-
-        const button =
-            document.getElementById("copyButton");
-
-        const original =
-            button.innerHTML;
-
-        button.innerHTML =
-            "✅ <span>Tersalin!</span>";
-
-        showStatus(
-            "📋 ID transaksi berhasil disalin!"
-        );
-
-        setTimeout(() => {
-
-            button.innerHTML = original;
-
-        }, 2000);
-
-    } catch (error) {
-
-        // Fallback untuk browser tertentu
-        const textarea =
-            document.createElement("textarea");
-
-        textarea.value = transactionId;
-
-        document.body.appendChild(textarea);
-
-        textarea.select();
-
-        document.execCommand("copy");
-
-        textarea.remove();
-
-        showStatus(
-            "📋 ID transaksi berhasil disalin!"
-        );
-    }
-}
-
-
-/* =========================================================
-   STATUS
-========================================================= */
-
-let statusTimer;
-
-function showStatus(message) {
-
-    const status =
-        document.getElementById("status");
-
-    clearTimeout(statusTimer);
-
-    status.textContent = message;
-
-    statusTimer = setTimeout(() => {
-
-        status.textContent = "";
-
-    }, 2500);
-}
-
-
-/* =========================================================
-   RANDOM CODE
-========================================================= */
-
-function generateKode() {
-
-    return Math.floor(
-        1000000 +
-        Math.random() * 9000000
-    );
-}
-
-
-function refreshKode() {
-
-    const element =
-        document.getElementById("kode");
-
-    element.style.opacity = "0";
-    element.style.transform = "scale(0.8)";
-
-    setTimeout(() => {
-
-        element.textContent =
-            generateKode();
-
-        element.style.opacity = "1";
-        element.style.transform = "scale(1)";
-
-    }, 150);
-}
-
-
-/* =========================================================
-   INITIALIZE
-========================================================= */
-
-generateNewId();
-
-refreshKode();
-
-</script>
-
+	<script src="js/idtransaksi.js"></script>
 </body>
 </html>
