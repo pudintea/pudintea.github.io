@@ -1,160 +1,152 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="css/idtransaksi.css">
-    <title>PUDIN | ID Transaksi</title>
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="css/idtransaksi.css">
+		<title>PUDIN | ID Transaksi</title>
+	</head>
+	<body>
+		<div class="app">
+			<!-- HEADER -->
+			<header class="header">
+				<div class="logo">P</div>
 
-<body>
-<div class="app">
-    <!-- HEADER -->
-    <header class="header">
-        <div class="logo">P</div>
+				<h1>PUDIN</h1>
 
-        <h1>PUDIN</h1>
-
-        <p>
-            Generator ID Transaksi & Kode Acak
-        </p>
-    </header>
-	<section>
-	<!-- Toast Notification -->
-		<div id="status" class="toast">
-			<span id="statusIcon">✓</span>
-			<span id="statusText"></span>
-		</div>
-
-    </section>
-
-    <!-- TRANSACTION CARD -->
-    <section class="card">
-
-        <div class="card-header">
-
-            <div class="icon">
-                🔐
-            </div>
-
-            <div class="card-title">
-                <h2>ID Transaksi</h2>
-
-                <span>
-                    ID unik untuk setiap transaksi
-                </span>
-            </div>
-
-        </div>
-
-
-        <div class="transaction-box">
-
-            <p id="idTransaksi">
-                Loading...
-            </p>
-
-        </div>
-
-
-        <div class="buttons">
-
-            <button
-                class="btn btn-light"
-                onclick="copyId()"
-                id="copyButton"
-            >
-                📋
-                <span>Copy ID</span>
-            </button>
-
-            <button
-                class="btn btn-primary"
-                onclick="generateNewId()"
-            >
-                🔄
-                <span>Generate Baru</span>
-            </button>
-
-        </div>
-
-        <!-- Toast Notification -->
-		<div id="status" class="toast">
-			<span id="statusIcon">✓</span>
-			<span id="statusText"></span>
-		</div>
-
-    </section>
-
-
-    <!-- RANDOM CODE CARD -->
-	<section class="card">
-
-		<div class="card-header">
-
-			<div class="icon">
-				🎲
-			</div>
-
-			<div class="card-title">
-				<h2>Kode Acak</h2>
-
-				<span>
-					Generate angka 7 digit secara otomatis
-				</span>
-			</div>
-
-		</div>
-
-
-		<div class="code-wrapper">
-
-			<div class="code-display">
-
-				<div class="code-label">
-					KODE ANDA
+				<p>
+					Generator ID Transaksi & Kode Acak
+				</p>
+			</header>
+			<section>
+			<!-- Toast Notification -->
+				<div id="status" class="toast">
+					<span id="statusIcon">✓</span>
+					<span id="statusText"></span>
 				</div>
 
-				<div id="kode">
-					0000000
+			</section>
+
+			<!-- TRANSACTION CARD -->
+			<section class="card">
+
+				<div class="card-header">
+
+					<div class="icon">
+						🔐
+					</div>
+
+					<div class="card-title">
+						<h2>ID Transaksi</h2>
+
+						<span>
+							ID unik untuk setiap transaksi
+						</span>
+					</div>
+
 				</div>
 
-			</div>
+
+				<div class="transaction-box">
+
+					<p id="idTransaksi">
+						Loading...
+					</p>
+
+				</div>
 
 
-			<!-- BUTTON KODE -->
-			<div class="buttons">
+				<div class="buttons">
 
-				<button
-					class="btn btn-light"
-					onclick="copyKode()"
-					id="copyKodeButton"
-				>
-					📋
-					<span>Copy Kode</span>
-				</button>
+					<button
+						class="btn btn-light"
+						onclick="copyId()"
+						id="copyButton"
+					>
+						📋
+						<span>Copy ID</span>
+					</button>
 
-				<button
-					class="btn btn-primary"
-					onclick="refreshKode()"
-				>
-					🔄
-					<span>Generate Baru</span>
-				</button>
+					<button
+						class="btn btn-primary"
+						onclick="generateNewId()"
+					>
+						🔄
+						<span>Generate Baru</span>
+					</button>
 
-			</div>
+				</div>
 
+				<!-- Toast Notification -->
+				<div id="status" class="toast">
+					<span id="statusIcon">✓</span>
+					<span id="statusText"></span>
+				</div>
+
+			</section>
+
+			<!-- RANDOM CODE CARD -->
+			<section class="card">
+
+				<div class="card-header">
+
+					<div class="icon">
+						🎲
+					</div>
+
+					<div class="card-title">
+						<h2>Kode Acak</h2>
+
+						<span>
+							Generate angka 7 digit secara otomatis
+						</span>
+					</div>
+
+				</div>
+
+				<div class="code-wrapper">
+
+					<div class="code-display">
+
+						<div class="code-label">
+							KODE ANDA
+						</div>
+
+						<div id="kode">
+							0000000
+						</div>
+
+					</div>
+
+					<!-- BUTTON KODE -->
+					<div class="buttons">
+
+						<button
+							class="btn btn-light"
+							onclick="copyKode()"
+							id="copyKodeButton"
+						>
+							📋
+							<span>Copy Kode</span>
+						</button>
+
+						<button
+							class="btn btn-primary"
+							onclick="refreshKode()"
+						>
+							🔄
+							<span>Generate Baru</span>
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<!-- FOOTER -->
+			<footer>
+				Made with ❤️ by <strong>Pudin Saepudin</strong>
+			</footer>
 		</div>
-
-	</section>
-
-    <!-- FOOTER -->
-    <footer>
-        Made with ❤️ by <strong>Pudin Saepudin</strong>
-    </footer>
-
-</div>
-	<script src="js/idtransaksi.js"></script>
-</body>
+		<script src="js/idtransaksi.js"></script>
+	</body>
 </html>
