@@ -5,21 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-    <title>Raker Countdown Timer | YPI AL AZHAR</title>
+    <title>Raker Countdown Timer</title>
 </head>
 <body class="bg-gray-900 min-h-screen flex items-center justify-center font-sans text-white">
 
-    <div class="bg-gray-800 p-10 rounded-2xl shadow-2xl text-center border border-gray-700 max-w-lg w-full">
-        <h1 class="text-2xl font-bold mb-6 text-gray-300">Raker Countdown Timer</h1>
+    <div class="bg-gray-800 p-8 rounded-3xl shadow-2xl text-center border border-gray-700 max-w-lg w-full relative overflow-hidden">
         
-        <!-- Timer Display -->
-        <div id="display" class="flex items-baseline justify-center font-mono font-bold mb-10 shadow-inner bg-gray-900 py-6 rounded-xl transition-colors duration-300">
+        <!-- Efek cahaya latar (Kosmetik) -->
+        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-full h-1 bg-gradient-to-r from-transparent via-cyan-500 to-transparent opacity-50"></div>
+
+        <h1 class="text-2xl font-bold mb-4 text-gray-300">Countdown Timer</h1>
+        
+        <!-- Jam Real-time Asia/Jakarta -->
+        <div class="mb-8">
+            <div id="realTimeClock" class="text-3xl font-mono font-medium text-gray-100 bg-gray-700/50 inline-block px-4 py-2 rounded-lg border border-gray-600">
+                00:00:00
+            </div>
+        </div>
+        
+        <!-- Timer Display Countdown -->
+        <div id="display" class="flex items-baseline justify-center font-mono font-bold mb-4 shadow-inner bg-gray-900 py-6 rounded-xl transition-colors duration-300 border border-gray-800">
             <span id="minsSecs" class="text-7xl text-cyan-400 tracking-wider">10:00</span>
             <span id="millisecs" class="text-3xl text-cyan-600 ml-1">.000</span>
         </div>
         
+        <!-- Info Waktu Mulai (Akan muncul setelah klik mulai) -->
+        <div id="startTimeContainer" class="h-6 mb-6 transition-opacity duration-300 opacity-0">
+            <p class="text-sm text-gray-400">
+                Dimulai pada: <span id="startTimeRecord" class="font-mono text-green-400 font-semibold tracking-wide"></span>
+            </p>
+        </div>
+        
         <!-- Controls -->
-        <div class="flex justify-center space-x-4">
+        <div class="flex justify-center space-x-3">
             <button id="startBtn" class="px-6 py-3 w-28 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-lg transition duration-200 transform hover:scale-105 active:scale-95 shadow-lg">
                 Mulai
             </button>
@@ -33,7 +51,28 @@
     </div>
 
     <script>
-        // Inisialisasi variabel waktu dalam milidetik
+        // --- 1. LOGIKA JAM REAL-TIME (ASIA/JAKARTA) ---
+        const realTimeClockEl = document.getElementById('realTimeClock');
+        
+        function updateRealTimeClock() {
+            const now = new Date();
+            // Mengambil waktu khusus zona Asia/Jakarta
+            const timeString = now.toLocaleTimeString('id-ID', {
+                timeZone: 'Asia/Jakarta',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit'
+            }).replace(/\./g, ':'); // Mengganti format titik (.) menjadi titik dua (:)
+
+            realTimeClockEl.textContent = timeString;
+        }
+        
+        // Jalankan jam setiap detik
+        setInterval(updateRealTimeClock, 1000);
+        updateRealTimeClock(); // Panggil sekali di awal agar tidak delay 1 detik
+
+
+        // --- 2. LOGIKA COUNTDOWN ---
         const TOTAL_MS = 10 * 60 * 1000; 
         let timeRemaining = TOTAL_MS;
         let expectedEndTime = 0;
@@ -41,21 +80,21 @@
         let isRunning = false;
         let lastTickSecond = -1;
 
-        // Elemen DOM
+        // Elemen DOM Countdown
         const minsSecsEl = document.getElementById('minsSecs');
         const millisecsEl = document.getElementById('millisecs');
         const startBtn = document.getElementById('startBtn');
         const stopBtn = document.getElementById('stopBtn');
         const resetBtn = document.getElementById('resetBtn');
+        const startTimeContainer = document.getElementById('startTimeContainer');
+        const startTimeRecord = document.getElementById('startTimeRecord');
 
-        // Setup Web Audio API untuk suara tanpa perlu file mp3
+        // Setup Audio
         const AudioContext = window.AudioContext || window.webkitAudioContext;
         let audioCtx = new AudioContext();
 
         function playSound(type) {
-            if (audioCtx.state === 'suspended') {
-                audioCtx.resume();
-            }
+            if (audioCtx.state === 'suspended') audioCtx.resume();
 
             const oscillator = audioCtx.createOscillator();
             const gainNode = audioCtx.createGain();
@@ -82,16 +121,13 @@
         }
 
         function updateDisplay() {
-            // Pastikan tidak negatif
             if (timeRemaining < 0) timeRemaining = 0;
 
-            // Kalkulasi Menit, Detik, Milidetik
             const totalSeconds = Math.floor(timeRemaining / 1000);
             const minutes = Math.floor(totalSeconds / 60);
             const seconds = totalSeconds % 60;
             const milliseconds = timeRemaining % 1000;
 
-            // Format String
             const mStr = minutes.toString().padStart(2, '0');
             const sStr = seconds.toString().padStart(2, '0');
             const msStr = milliseconds.toString().padStart(3, '0');
@@ -99,7 +135,6 @@
             minsSecsEl.textContent = `${mStr}:${sStr}`;
             millisecsEl.textContent = `.${msStr}`;
             
-            // Ubah warna menjadi merah saat 10 detik terakhir
             if (timeRemaining <= 10000 && timeRemaining > 0) {
                 minsSecsEl.classList.replace('text-cyan-400', 'text-red-500');
                 millisecsEl.classList.replace('text-cyan-600', 'text-red-400');
@@ -119,17 +154,15 @@
                 timeRemaining = 0;
                 updateDisplay();
                 playSound('end');
-                resetStopButton(); // Kembalikan tombol stop ke semula
+                resetStopButton(); 
                 isRunning = false;
                 return;
             }
 
             updateDisplay();
 
-            // Logika Suara untuk 10 detik terakhir
             const currentSecond = Math.ceil(timeRemaining / 1000);
             if (currentSecond <= 10 && currentSecond > 0) {
-                // Pastikan suara tik hanya bunyi 1 kali setiap detiknya
                 if (lastTickSecond !== currentSecond) {
                     playSound('tick');
                     lastTickSecond = currentSecond;
@@ -155,21 +188,32 @@
             if (audioCtx.state === 'suspended') audioCtx.resume();
             
             if (!isRunning && timeRemaining > 0) {
+                // Rekam waktu mulai HANYA jika timer dimulai dari 10 menit utuh
+                if (timeRemaining === TOTAL_MS) {
+                    const startNow = new Date();
+                    const startStr = startNow.toLocaleTimeString('id-ID', {
+                        timeZone: 'Asia/Jakarta',
+                        hour: '2-digit', minute: '2-digit', second: '2-digit'
+                    }).replace(/\./g, ':');
+                    
+                    startTimeRecord.textContent = startStr;
+                    startTimeContainer.classList.remove('opacity-0');
+                    startTimeContainer.classList.add('opacity-100');
+                }
+
                 isRunning = true;
                 expectedEndTime = Date.now() + timeRemaining;
-                resetStopButton(); // Pastikan tulisan tombol adalah "Stop" saat jalan
+                resetStopButton(); 
                 timerFrame = requestAnimationFrame(tick);
             }
         }
 
         function toggleStopResume() {
-            // Jika sedang berjalan, maka STOP (Pause)
             if (isRunning) {
                 isRunning = false;
                 cancelAnimationFrame(timerFrame);
-                setResumeButton(); // Ubah ke Lanjutkan
+                setResumeButton(); 
             } 
-            // Jika sedang stop (dan belum habis), maka LANJUTKAN
             else if (!isRunning && timeRemaining > 0 && timeRemaining < TOTAL_MS) {
                 startTimer();
             }
@@ -179,10 +223,15 @@
             isRunning = false;
             cancelAnimationFrame(timerFrame);
             timeRemaining = TOTAL_MS;
-            lastTickSecond = -1; // Reset pelacak detik suara
+            lastTickSecond = -1; 
             
-            resetStopButton(); // Kembalikan ke desain "Stop"
+            resetStopButton();
             updateDisplay();
+
+            // Sembunyikan dan hapus rekaman waktu mulai
+            startTimeContainer.classList.remove('opacity-100');
+            startTimeContainer.classList.add('opacity-0');
+            setTimeout(() => { startTimeRecord.textContent = ""; }, 300);
         }
 
         // Event Listeners
@@ -190,7 +239,6 @@
         stopBtn.addEventListener('click', toggleStopResume);
         resetBtn.addEventListener('click', resetTimer);
 
-        // Render pertama kali
         updateDisplay();
     </script>
 </body>
